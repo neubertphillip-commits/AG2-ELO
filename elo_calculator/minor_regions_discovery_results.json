@@ -1,0 +1,2281 @@
+{
+  "found_tournaments": [
+    {
+      "name": "CBLOL 2014 Champions Series",
+      "url": "CBLOL/2014 Season/Champions Series",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2015 Split 1",
+      "url": "CBLOL/2015 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2015 Split 1 Playoffs",
+      "url": "CBLOL/2015 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2015 Split 2",
+      "url": "CBLOL/2015 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2015 Split 2 Playoffs",
+      "url": "CBLOL/2015 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2016 Split 1",
+      "url": "CBLOL/2016 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2016 Split 1 Playoffs",
+      "url": "CBLOL/2016 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2016 Split 2",
+      "url": "CBLOL/2016 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2016 Split 2 Playoffs",
+      "url": "CBLOL/2016 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "CBLOL 2017 Split 1",
+      "url": "CBLOL/2017 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2017 Split 1 Playoffs",
+      "url": "CBLOL/2017 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CBLOL 2017 Split 2",
+      "url": "CBLOL/2017 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2017 Split 2 Playoffs",
+      "url": "CBLOL/2017 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CBLOL 2018 Split 1",
+      "url": "CBLOL/2018 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2018 Split 1 Playoffs",
+      "url": "CBLOL/2018 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "CBLOL 2018 Split 2",
+      "url": "CBLOL/2018 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2018 Split 2 Playoffs",
+      "url": "CBLOL/2018 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "CBLOL 2019 Split 1",
+      "url": "CBLOL/2019 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2019 Split 1 Playoffs",
+      "url": "CBLOL/2019 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CBLOL 2019 Split 2",
+      "url": "CBLOL/2019 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2019 Split 2 Playoffs",
+      "url": "CBLOL/2019 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CBLOL 2020 Split 1",
+      "url": "CBLOL/2020 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2020 Split 1 Playoffs",
+      "url": "CBLOL/2020 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CBLOL 2020 Split 2",
+      "url": "CBLOL/2020 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2020 Split 2 Playoffs",
+      "url": "CBLOL/2020 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CBLOL 2021 Split 1",
+      "url": "CBLOL/2021 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2021 Split 1 Playoffs",
+      "url": "CBLOL/2021 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2021 Split 2",
+      "url": "CBLOL/2021 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2021 Split 2 Playoffs",
+      "url": "CBLOL/2021 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2022 Split 1",
+      "url": "CBLOL/2022 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2022 Split 1 Playoffs",
+      "url": "CBLOL/2022 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2022 Split 2",
+      "url": "CBLOL/2022 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2022 Split 2 Playoffs",
+      "url": "CBLOL/2022 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2023 Split 1",
+      "url": "CBLOL/2023 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2023 Split 1 Playoffs",
+      "url": "CBLOL/2023 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2023 Split 2",
+      "url": "CBLOL/2023 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2023 Split 2 Playoffs",
+      "url": "CBLOL/2023 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2024 Split 1",
+      "url": "CBLOL/2024 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2024 Split 1 Playoffs",
+      "url": "CBLOL/2024 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2024 Split 2",
+      "url": "CBLOL/2024 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2024 Split 2 Playoffs",
+      "url": "CBLOL/2024 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CBLOL 2015 Post-Season",
+      "url": "CBLOL/2015 Season/Post-Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2020 Spring",
+      "url": "PCS/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2020 Spring Playoffs",
+      "url": "PCS/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2020 Summer",
+      "url": "PCS/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2020 Summer Playoffs",
+      "url": "PCS/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2021 Spring",
+      "url": "PCS/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2021 Spring Playoffs",
+      "url": "PCS/2021 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2021 Summer",
+      "url": "PCS/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2021 Summer Playoffs",
+      "url": "PCS/2021 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2022 Spring",
+      "url": "PCS/2022 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2022 Spring Playoffs",
+      "url": "PCS/2022 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2022 Summer",
+      "url": "PCS/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2022 Summer Playoffs",
+      "url": "PCS/2022 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2023 Spring",
+      "url": "PCS/2023 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2023 Spring Playoffs",
+      "url": "PCS/2023 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2023 Summer",
+      "url": "PCS/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2023 Summer Playoffs",
+      "url": "PCS/2023 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2024 Spring",
+      "url": "PCS/2024 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2024 Spring Playoffs",
+      "url": "PCS/2024 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2024 Summer",
+      "url": "PCS/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2024 Summer Playoffs",
+      "url": "PCS/2024 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2025 Split 1",
+      "url": "PCS/2025 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2025 Split 1 Playoffs",
+      "url": "PCS/2025 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2025 Split 2",
+      "url": "PCS/2025 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2025 Split 2 Playoffs",
+      "url": "PCS/2025 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2025 Split 3",
+      "url": "PCS/2025 Season/Split 3",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "PCS 2025 Split 3 Playoffs",
+      "url": "PCS/2025 Season/Split 3 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2015 Spring",
+      "url": "LMS/2015 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2015 Spring Playoffs",
+      "url": "LMS/2015 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2015 Summer",
+      "url": "LMS/2015 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2015 Summer Playoffs",
+      "url": "LMS/2015 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2016 Spring",
+      "url": "LMS/2016 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2016 Spring Playoffs",
+      "url": "LMS/2016 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2016 Summer",
+      "url": "LMS/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2016 Summer Playoffs",
+      "url": "LMS/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2017 Spring",
+      "url": "LMS/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2017 Spring Playoffs",
+      "url": "LMS/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2017 Summer",
+      "url": "LMS/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2017 Summer Playoffs",
+      "url": "LMS/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2018 Spring",
+      "url": "LMS/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2018 Spring Playoffs",
+      "url": "LMS/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2018 Summer",
+      "url": "LMS/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2018 Summer Playoffs",
+      "url": "LMS/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2019 Spring",
+      "url": "LMS/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2019 Spring Playoffs",
+      "url": "LMS/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LMS 2019 Summer",
+      "url": "LMS/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LMS 2019 Summer Playoffs",
+      "url": "LMS/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS 2025 Spring",
+      "url": "VCS/2025 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2025 Summer",
+      "url": "VCS/2025 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2025 Finals",
+      "url": "VCS/2025 Season/Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS 2022 Spring",
+      "url": "VCS/2022 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2022 Spring Playoffs",
+      "url": "VCS/2022 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS 2022 Summer",
+      "url": "VCS/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2022 Summer Playoffs",
+      "url": "VCS/2022 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2023 Spring",
+      "url": "VCS/2023 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2023 Spring Playoffs",
+      "url": "VCS/2023 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2023 Summer",
+      "url": "VCS/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2023 Summer Playoffs",
+      "url": "VCS/2023 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2024 Spring",
+      "url": "VCS/2024 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2024 Spring Playoffs",
+      "url": "VCS/2024 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2024 Summer",
+      "url": "VCS/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2024 Summer Playoffs",
+      "url": "VCS/2024 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2021 Spring",
+      "url": "VCS/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2021 Spring Playoffs",
+      "url": "VCS/2021 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "VCS 2021 Winter",
+      "url": "VCS/2021 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2021 Winter Playoffs",
+      "url": "VCS/2021 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "VCS 2018 Spring",
+      "url": "VCS/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2018 Spring Playoffs",
+      "url": "VCS/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS 2018 Summer",
+      "url": "VCS/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2018 Summer Playoffs",
+      "url": "VCS/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS 2019 Spring",
+      "url": "VCS/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2019 Spring Playoffs",
+      "url": "VCS/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS 2019 Summer",
+      "url": "VCS/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2019 Summer Playoffs",
+      "url": "VCS/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2020 Spring",
+      "url": "VCS/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2020 Spring Playoffs",
+      "url": "VCS/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS 2020 Summer",
+      "url": "VCS/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS 2020 Summer Playoffs",
+      "url": "VCS/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS A 2017 Spring",
+      "url": "VCS A/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS A 2017 Spring Playoffs",
+      "url": "VCS A/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS A 2017 Summer",
+      "url": "VCS A/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS A 2017 Summer Playoffs",
+      "url": "VCS A/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "VCS A 2014 Spring",
+      "url": "VCS A/2014 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS A 2014 Summer",
+      "url": "VCS A/2014 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "VCS A 2013 Winter",
+      "url": "VCS A/2013 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2025 Forge",
+      "url": "LJL/2025 Season/Forge",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2025 Storm",
+      "url": "LJL/2025 Season/Storm",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2025 Ignite",
+      "url": "LJL/2025 Season/Ignite",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2025 Finals",
+      "url": "LJL/2025 Season/Finals",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2016 Spring",
+      "url": "LJL/2016 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2016 Spring Playoffs",
+      "url": "LJL/2016 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2016 Summer",
+      "url": "LJL/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2016 Summer Playoffs",
+      "url": "LJL/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2017 Spring",
+      "url": "LJL/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2017 Spring Playoffs",
+      "url": "LJL/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2017 Summer",
+      "url": "LJL/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2017 Summer Playoffs",
+      "url": "LJL/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2018 Spring",
+      "url": "LJL/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2018 Spring Playoffs",
+      "url": "LJL/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2018 Summer",
+      "url": "LJL/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2018 Summer Playoffs",
+      "url": "LJL/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2019 Spring",
+      "url": "LJL/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2019 Spring Playoffs",
+      "url": "LJL/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2019 Summer",
+      "url": "LJL/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2019 Summer Playoffs",
+      "url": "LJL/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LJL 2020 Spring",
+      "url": "LJL/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2020 Spring Playoffs",
+      "url": "LJL/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2020 Summer",
+      "url": "LJL/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2020 Summer Playoffs",
+      "url": "LJL/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2021 Spring",
+      "url": "LJL/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2021 Spring Playoffs",
+      "url": "LJL/2021 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2021 Summer",
+      "url": "LJL/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2021 Summer Playoffs",
+      "url": "LJL/2021 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2022 Spring",
+      "url": "LJL/2022 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2022 Spring Playoffs",
+      "url": "LJL/2022 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2022 Summer",
+      "url": "LJL/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2022 Summer Playoffs",
+      "url": "LJL/2022 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2023 Spring",
+      "url": "LJL/2023 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2023 Spring Playoffs",
+      "url": "LJL/2023 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2023 Summer",
+      "url": "LJL/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2023 Summer Playoffs",
+      "url": "LJL/2023 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2024 Spring",
+      "url": "LJL/2024 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2024 Spring Playoffs",
+      "url": "LJL/2024 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LJL 2024 Summer",
+      "url": "LJL/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2024 Summer Playoffs",
+      "url": "LJL/2024 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2015 Season 1",
+      "url": "LJL/2015 Season/Season 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2015 Season 2",
+      "url": "LJL/2015 Season/Season 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2015 Grand Finals",
+      "url": "LJL/2015 Season/Grand Finals",
+      "found": true,
+      "sample_matches": 1
+    },
+    {
+      "name": "LJL 2014 Winter",
+      "url": "LJL/2014 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2014 Spring",
+      "url": "LJL/2014 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LJL 2014 Summer",
+      "url": "LJL/2014 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2025 Spring Playoffs",
+      "url": "TCL/2025 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2025 Winter Playoffs",
+      "url": "TCL/2025 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2025 Summer Playoffs",
+      "url": "TCL/2025 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2015 Winter",
+      "url": "TCL/2015 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2015 Winter Playoffs",
+      "url": "TCL/2015 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2015 Summer",
+      "url": "TCL/2015 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2015 Summer Playoffs",
+      "url": "TCL/2015 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2016 Winter",
+      "url": "TCL/2016 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2016 Winter Playoffs",
+      "url": "TCL/2016 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2016 Summer",
+      "url": "TCL/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2016 Summer Playoffs",
+      "url": "TCL/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2017 Winter",
+      "url": "TCL/2017 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2017 Winter Playoffs",
+      "url": "TCL/2017 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2017 Summer",
+      "url": "TCL/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2017 Summer Playoffs",
+      "url": "TCL/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2018 Winter",
+      "url": "TCL/2018 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2018 Winter Playoffs",
+      "url": "TCL/2018 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2018 Summer",
+      "url": "TCL/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2018 Summer Playoffs",
+      "url": "TCL/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2019 Winter",
+      "url": "TCL/2019 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2019 Winter Playoffs",
+      "url": "TCL/2019 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2019 Summer",
+      "url": "TCL/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2019 Summer Playoffs",
+      "url": "TCL/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2020 Winter",
+      "url": "TCL/2020 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2020 Winter Playoffs",
+      "url": "TCL/2020 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2020 Summer",
+      "url": "TCL/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2020 Summer Playoffs",
+      "url": "TCL/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2021 Winter",
+      "url": "TCL/2021 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2021 Winter Playoffs",
+      "url": "TCL/2021 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2021 Summer",
+      "url": "TCL/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2021 Summer Playoffs",
+      "url": "TCL/2021 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2022 Winter",
+      "url": "TCL/2022 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2022 Winter Playoffs",
+      "url": "TCL/2022 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2022 Summer",
+      "url": "TCL/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2022 Summer Playoffs",
+      "url": "TCL/2022 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2023 Winter",
+      "url": "TCL/2023 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2023 Winter Playoffs",
+      "url": "TCL/2023 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2023 Summer",
+      "url": "TCL/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2023 Summer Playoffs",
+      "url": "TCL/2023 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2024 Winter",
+      "url": "TCL/2024 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2024 Winter Playoffs",
+      "url": "TCL/2024 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2024 Summer",
+      "url": "TCL/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "TCL 2024 Summer Playoffs",
+      "url": "TCL/2024 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2019 Opening",
+      "url": "LLA/2019 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2019 Opening Playoffs",
+      "url": "LLA/2019 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2019 Closing",
+      "url": "LLA/2019 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2019 Closing Playoffs",
+      "url": "LLA/2019 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2020 Opening",
+      "url": "LLA/2020 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2020 Opening Playoffs",
+      "url": "LLA/2020 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LLA 2020 Closing",
+      "url": "LLA/2020 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2020 Closing Playoffs",
+      "url": "LLA/2020 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LLA 2021 Opening",
+      "url": "LLA/2021 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2021 Opening Playoffs",
+      "url": "LLA/2021 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LLA 2021 Closing",
+      "url": "LLA/2021 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2021 Closing Playoffs",
+      "url": "LLA/2021 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LLA 2022 Opening",
+      "url": "LLA/2022 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2022 Opening Playoffs",
+      "url": "LLA/2022 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2022 Closing",
+      "url": "LLA/2022 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2022 Closing Playoffs",
+      "url": "LLA/2022 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2023 Opening",
+      "url": "LLA/2023 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2023 Opening Playoffs",
+      "url": "LLA/2023 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2023 Closing",
+      "url": "LLA/2023 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2023 Closing Playoffs",
+      "url": "LLA/2023 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2024 Opening",
+      "url": "LLA/2024 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2024 Opening Playoffs",
+      "url": "LLA/2024 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2024 Closing",
+      "url": "LLA/2024 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLA 2024 Closing Playoffs",
+      "url": "LLA/2024 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLN 2017 Opening",
+      "url": "LLN/2017 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLN 2017 Opening Playoffs",
+      "url": "LLN/2017 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LLN 2017 Closing",
+      "url": "LLN/2017 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLN 2017 Closing Playoffs",
+      "url": "LLN/2017 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LLN 2018 Opening",
+      "url": "LLN/2018 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLN 2018 Opening Playoffs",
+      "url": "LLN/2018 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLN 2018 Closing",
+      "url": "LLN/2018 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LLN 2018 Closing Playoffs",
+      "url": "LLN/2018 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LAS 2015 Opening Cup",
+      "url": "Latin America Cup 2015/LAS/Opening Cup/Regular Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LAS 2015 Opening Cup Playoffs",
+      "url": "Latin America Cup 2015/LAS/Opening Cup/Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LAS 2015 Closing Cup",
+      "url": "Latin America Cup 2015/LAS/Closing Cup/Regular Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LAS 2015 Closing Cup Playoffs",
+      "url": "Latin America Cup 2015/LAS/Closing Cup/Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LAS 2016 Opening Cup",
+      "url": "Latin America Cup/LAS/2016 Season/Opening Cup/Regular Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LAS 2016 Opening Cup Playoffs",
+      "url": "Latin America Cup/LAS/2016 Season/Opening Cup/Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LAS 2016 Closing Cup",
+      "url": "Latin America Cup/LAS/2016 Season/Closing Cup/Regular Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LAS 2016 Closing Cup Playoffs",
+      "url": "Latin America Cup/LAS/2016 Season/Closing Cup/Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CLS 2017 Opening",
+      "url": "CLS/2017 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CLS 2017 Opening Playoffs",
+      "url": "CLS/2017 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CLS 2017 Closing",
+      "url": "CLS/2017 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CLS 2017 Closing Playoffs",
+      "url": "CLS/2017 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "CLS 2018 Opening",
+      "url": "CLS/2018 Season/Opening Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CLS 2018 Opening Playoffs",
+      "url": "CLS/2018 Season/Opening Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CLS 2018 Closing",
+      "url": "CLS/2018 Season/Closing Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "CLS 2018 Closing Playoffs",
+      "url": "CLS/2018 Season/Closing Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2015 Split 1",
+      "url": "OPL/2015 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2015 Split 1 Playoffs",
+      "url": "OPL/2015 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "OPL 2015 Split 2",
+      "url": "OPL/2015 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2015 Split 2 Playoffs",
+      "url": "OPL/2015 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "OPL 2016 Split 1",
+      "url": "OPL/2016 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2016 Split 1 Playoffs",
+      "url": "OPL/2016 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "OPL 2016 Split 2",
+      "url": "OPL/2016 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2016 Split 2 Playoffs",
+      "url": "OPL/2016 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "OPL 2017 Split 1",
+      "url": "OPL/2017 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2017 Split 1 Playoffs",
+      "url": "OPL/2017 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OPL 2017 Split 2",
+      "url": "OPL/2017 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2017 Split 2 Playoffs",
+      "url": "OPL/2017 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OPL 2018 Split 1",
+      "url": "OPL/2018 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2018 Split 1 Playoffs",
+      "url": "OPL/2018 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OPL 2018 Split 2",
+      "url": "OPL/2018 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2018 Split 2 Playoffs",
+      "url": "OPL/2018 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OPL 2019 Split 1",
+      "url": "OPL/2019 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2019 Split 1 Playoffs",
+      "url": "OPL/2019 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OPL 2019 Split 2",
+      "url": "OPL/2019 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2019 Split 2 Playoffs",
+      "url": "OPL/2019 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OPL 2020 Split 1",
+      "url": "OPL/2020 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2020 Split 1 Playoffs",
+      "url": "OPL/2020 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2020 Split 2",
+      "url": "OPL/2020 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OPL 2020 Split 2 Playoffs",
+      "url": "OPL/2020 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2021 Split 1",
+      "url": "LCO/2021 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2021 Split 1 Playoffs",
+      "url": "LCO/2021 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2021 Split 2",
+      "url": "LCO/2021 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2021 Split 2 Playoffs",
+      "url": "LCO/2021 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2022 Split 1",
+      "url": "LCO/2022 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2022 Split 1 Playoffs",
+      "url": "LCO/2022 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2022 Split 2",
+      "url": "LCO/2022 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2022 Split 2 Playoffs",
+      "url": "LCO/2022 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2023 Split 1",
+      "url": "LCO/2023 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2023 Split 1 Playoffs",
+      "url": "LCO/2023 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2023 Split 2",
+      "url": "LCO/2023 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2023 Split 2 Playoffs",
+      "url": "LCO/2023 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2024 Split 1",
+      "url": "LCO/2024 Season/Split 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2024 Split 1 Playoffs",
+      "url": "LCO/2024 Season/Split 1 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2024 Split 2",
+      "url": "LCO/2024 Season/Split 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCO 2024 Split 2 Playoffs",
+      "url": "LCO/2024 Season/Split 2 Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2016 Spring",
+      "url": "LCL/2016 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2016 Spring Playoffs",
+      "url": "LCL/2016 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCL 2016 Summer",
+      "url": "LCL/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2016 Summer Playoffs",
+      "url": "LCL/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2017 Spring",
+      "url": "LCL/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2017 Spring Playoffs",
+      "url": "LCL/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2017 Summer",
+      "url": "LCL/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2017 Summer Playoffs",
+      "url": "LCL/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2018 Spring",
+      "url": "LCL/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2018 Spring Playoffs",
+      "url": "LCL/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCL 2018 Summer",
+      "url": "LCL/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2018 Summer Playoffs",
+      "url": "LCL/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2019 Spring",
+      "url": "LCL/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2019 Spring Playoffs",
+      "url": "LCL/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2019 Summer",
+      "url": "LCL/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2019 Summer Playoffs",
+      "url": "LCL/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2020 Spring",
+      "url": "LCL/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2020 Spring Playoffs",
+      "url": "LCL/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2020 Summer",
+      "url": "LCL/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2020 Summer Playoffs",
+      "url": "LCL/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2021 Spring",
+      "url": "LCL/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2021 Spring Playoffs",
+      "url": "LCL/2021 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCL 2021 Summer",
+      "url": "LCL/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCL 2021 Summer Playoffs",
+      "url": "LCL/2021 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2017 Spring",
+      "url": "GPL/2017 Season/Spring",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2017 Summer",
+      "url": "GPL/2017 Season/Summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2016 Spring",
+      "url": "GPL/2016 Season/Spring",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2016 Summer",
+      "url": "GPL/2016 Season/Summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2015 Spring",
+      "url": "2015 GPL Spring",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2015 Spring Playoffs",
+      "url": "2015 GPL Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "GPL 2015 Summer",
+      "url": "2015 GPL Summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2015 Summer Playoffs",
+      "url": "2015 GPL Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "GPL 2014 Winter",
+      "url": "2014 GPL Winter",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2014 Spring",
+      "url": "2014 GPL Spring",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2014 Summer",
+      "url": "2014 GPL Summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2014 Summer Taiwan Warm Up Tournament",
+      "url": "2014 GPL Summer Taiwan Warm Up Tournament",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "GPL 2013 Spring",
+      "url": "2013 GPL Spring",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2013 Summer",
+      "url": "2013 GPL Summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "GPL 2013 Championship",
+      "url": "2013 GPL Championship",
+      "found": true,
+      "sample_matches": 1
+    },
+    {
+      "name": "Rift Rivals 2017 GPL-LJL-OPL",
+      "url": "Rift Rivals 2017/GPL-LJL-OPL",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2017 LCL-TCL",
+      "url": "Rift Rivals 2017/LCL-TCL",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2017 LLN-CLS-CBLOL",
+      "url": "Rift Rivals 2017/LLN-CLS-CBLOL",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2018 SEA-LJL-OPL",
+      "url": "Rift Rivals 2018/SEA-LJL-OPL",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2018 LCL-TCL-VCS",
+      "url": "Rift Rivals 2018/LCL-TCL-VCS",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2018 LLN-CLS-CBLOL",
+      "url": "Rift Rivals 2018/LLN-CLS-CBLOL",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IWC 2013 Gamescom",
+      "url": "Gamescom 2013/International Wildcard Tournament",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IWC 2015 Invitational",
+      "url": "2015 International Wildcard Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IWC 2015 Turkey",
+      "url": "2015 International Wildcard Tournament/Turkey",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IWC 2015 Chile",
+      "url": "2015 International Wildcard Tournament/Chile",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IWC 2016 Invitational",
+      "url": "2016 International Wildcard Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IWC 2016 Qualifier",
+      "url": "2016 International Wildcard Qualifier",
+      "found": true,
+      "sample_matches": 5
+    }
+  ],
+  "not_found": [
+    {
+      "name": "CBLOL 2014 Champions Series Playoffs",
+      "url": "CBLOL/2014 Season/Champions Series Playoffs",
+      "found": false
+    },
+    {
+      "name": "MDCS 2016 Summer",
+      "url": "MDCS/2016 Season/Summer Season",
+      "found": false
+    },
+    {
+      "name": "MDCS 2016 Summer Playoffs",
+      "url": "MDCS/2016 Season/Summer Playoffs",
+      "found": false
+    },
+    {
+      "name": "Coca-Cola Championship Series 2016 Spring",
+      "url": "Coca-Cola Championship Series/2016 Season/Spring Season",
+      "found": false
+    },
+    {
+      "name": "Coca-Cola Championship Series 2016 Spring Playoffs",
+      "url": "Coca-Cola Championship Series/2016 Season/Spring Playoffs",
+      "found": false
+    },
+    {
+      "name": "VCS A 2015 Spring",
+      "url": "VCS A/2015 Season/Spring Season",
+      "found": false
+    },
+    {
+      "name": "VCS A 2015 Summer",
+      "url": "VCS A/2015 Season/Summer Season",
+      "found": false
+    },
+    {
+      "name": "LJL 2014 Grand Finals",
+      "url": "LJL/2014 Season/Grand Finals",
+      "found": false
+    },
+    {
+      "name": "TCL 2025 Spring",
+      "url": "TCL/2025 Season/Spring Season",
+      "found": false
+    },
+    {
+      "name": "TCL 2025 Winter",
+      "url": "TCL/2025 Season/Winter Season",
+      "found": false
+    },
+    {
+      "name": "TCL 2025 Summer",
+      "url": "TCL/2025 Season/Summer Season",
+      "found": false
+    },
+    {
+      "name": "TCL 2014 Winter",
+      "url": "TCL/2014 Season/Winter Season",
+      "found": false
+    },
+    {
+      "name": "TCL 2014 Winter Playoffs",
+      "url": "TCL/2014 Season/Winter Playoffs",
+      "found": false
+    },
+    {
+      "name": "TCL 2014 Spring",
+      "url": "TCL/2014 Season/Spring Season",
+      "found": false
+    },
+    {
+      "name": "TCL 2014 Spring Playoffs",
+      "url": "TCL/2014 Season/Spring Playoffs",
+      "found": false
+    },
+    {
+      "name": "TCL 2014 Summer",
+      "url": "TCL/2014 Season/Summer Season",
+      "found": false
+    },
+    {
+      "name": "TCL 2014 Summer Playoffs",
+      "url": "TCL/2014 Season/Summer Playoffs",
+      "found": false
+    },
+    {
+      "name": "LAN 2015 Opening Cup",
+      "url": "LAN/2015 Season/Opening Cup",
+      "found": false
+    },
+    {
+      "name": "LAN 2015 Opening Cup Playoffs",
+      "url": "LAN/2015 Season/Opening Cup Playoffs",
+      "found": false
+    },
+    {
+      "name": "LAN 2015 Closing Cup",
+      "url": "LAN/2015 Season/Closing Cup",
+      "found": false
+    },
+    {
+      "name": "LAN 2015 Closing Cup Playoffs",
+      "url": "LAN/2015 Season/Closing Cup Playoffs",
+      "found": false
+    },
+    {
+      "name": "LAN 2016 Opening Cup",
+      "url": "LAN/2016 Season/Opening Cup",
+      "found": false
+    },
+    {
+      "name": "LAN 2016 Opening Cup Playoffs",
+      "url": "LAN/2016 Season/Opening Cup Playoffs",
+      "found": false
+    },
+    {
+      "name": "LAN 2016 Closing Cup",
+      "url": "LAN/2016 Season/Closing Cup",
+      "found": false
+    },
+    {
+      "name": "LAN 2016 Closing Cup Playoffs",
+      "url": "LAN/2016 Season/Closing Cup Playoffs",
+      "found": false
+    },
+    {
+      "name": "GPL 2018 Spring",
+      "url": "GPL/2018 Season/Spring Season",
+      "found": false
+    },
+    {
+      "name": "GPL 2012 Season 1",
+      "url": "GPL/2012 Season/Season 1",
+      "found": false
+    },
+    {
+      "name": "GPL 2012 Season 1 Playoffs",
+      "url": "GPL/2012 Season/Season 1 Playoffs",
+      "found": false
+    },
+    {
+      "name": "GPL 2012 Opening Event",
+      "url": "GPL/2012 Season/Opening Event",
+      "found": false
+    }
+  ],
+  "summary": {
+    "total": 383,
+    "found": 354,
+    "not_found": 29,
+    "success_rate": 92.42819843342036
+  }
+}

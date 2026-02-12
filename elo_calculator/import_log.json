@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-11-28T21:17:00.231934",
+  "duration_seconds": 1348.2909619808197,
+  "statistics": {
+    "tournaments_total": 354,
+    "tournaments_imported": 338,
+    "tournaments_failed": 0,
+    "tournaments_no_data": 16,
+    "total_matches_found": 11038,
+    "matches_inserted": 11038,
+    "matches_failed": 0,
+    "matches_skipped": 0,
+    "matches_with_estimated_dates": 0,
+    "players_inserted": 0,
+    "_last_skip_count": 0,
+    "_last_estimated_count": 0
+  }
+}

@@ -1,0 +1,1776 @@
+{
+  "_comment": "Auto-generated team name mappings",
+  "_generated_at": "1763858184.5142262",
+  "mappings": [
+    {
+      "canonical_name": "fnatic",
+      "aliases": [],
+      "region": "EU",
+      "notes": "696 matches"
+    },
+    {
+      "canonical_name": "cloud9",
+      "aliases": [],
+      "region": "NA",
+      "notes": "637 matches"
+    },
+    {
+      "canonical_name": "tsm",
+      "aliases": [],
+      "region": "NA",
+      "notes": "611 matches"
+    },
+    {
+      "canonical_name": "invictus",
+      "aliases": [],
+      "region": "CN",
+      "notes": "560 matches"
+    },
+    {
+      "canonical_name": "team we",
+      "aliases": [],
+      "region": "CN",
+      "notes": "543 matches"
+    },
+    {
+      "canonical_name": "edward",
+      "aliases": [],
+      "region": "CN",
+      "notes": "542 matches"
+    },
+    {
+      "canonical_name": "counter logic",
+      "aliases": [],
+      "region": "NA",
+      "notes": "533 matches"
+    },
+    {
+      "canonical_name": "royal never give up",
+      "aliases": [],
+      "region": "CN",
+      "notes": "511 matches"
+    },
+    {
+      "canonical_name": "g2",
+      "aliases": [],
+      "region": "EU",
+      "notes": "506 matches"
+    },
+    {
+      "canonical_name": "team liquid",
+      "aliases": [],
+      "region": "NA",
+      "notes": "500 matches"
+    },
+    {
+      "canonical_name": "oh my god",
+      "aliases": [],
+      "region": "CN",
+      "notes": "496 matches"
+    },
+    {
+      "canonical_name": "kt rolster",
+      "aliases": [],
+      "region": "KR",
+      "notes": "438 matches"
+    },
+    {
+      "canonical_name": "dignitas",
+      "aliases": [],
+      "region": "NA",
+      "notes": "437 matches"
+    },
+    {
+      "canonical_name": "lgd",
+      "aliases": [],
+      "region": "CN",
+      "notes": "429 matches"
+    },
+    {
+      "canonical_name": "sk",
+      "aliases": [],
+      "region": "EU",
+      "notes": "422 matches"
+    },
+    {
+      "canonical_name": "flyquest",
+      "aliases": [],
+      "region": "NA",
+      "notes": "347 matches"
+    },
+    {
+      "canonical_name": "team vitality",
+      "aliases": [],
+      "region": "EU",
+      "notes": "333 matches"
+    },
+    {
+      "canonical_name": "geng",
+      "aliases": [],
+      "region": "KR",
+      "notes": "330 matches"
+    },
+    {
+      "canonical_name": "jd",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "330 matches"
+    },
+    {
+      "canonical_name": "100 thieves",
+      "aliases": [],
+      "region": "NA",
+      "notes": "324 matches"
+    },
+    {
+      "canonical_name": "sk telecom t1",
+      "aliases": [],
+      "region": "KR",
+      "notes": "315 matches"
+    },
+    {
+      "canonical_name": "bilibili",
+      "aliases": [],
+      "region": "CN",
+      "notes": "304 matches"
+    },
+    {
+      "canonical_name": "hanwha life",
+      "aliases": [],
+      "region": "KR",
+      "notes": "293 matches"
+    },
+    {
+      "canonical_name": "funplus phoenix",
+      "aliases": [],
+      "region": "CN",
+      "notes": "288 matches"
+    },
+    {
+      "canonical_name": "t1",
+      "aliases": [],
+      "region": "KR",
+      "notes": "284 matches"
+    },
+    {
+      "canonical_name": "evil geniusesna",
+      "aliases": [],
+      "region": "NA",
+      "notes": "282 matches"
+    },
+    {
+      "canonical_name": "immortals",
+      "aliases": [],
+      "region": "NA",
+      "notes": "276 matches"
+    },
+    {
+      "canonical_name": "golden guardians",
+      "aliases": [],
+      "region": "NA",
+      "notes": "261 matches"
+    },
+    {
+      "canonical_name": "afreeca freecs",
+      "aliases": [],
+      "region": "KR",
+      "notes": "260 matches"
+    },
+    {
+      "canonical_name": "top",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "254 matches"
+    },
+    {
+      "canonical_name": "misfits",
+      "aliases": [],
+      "region": "EU",
+      "notes": "232 matches"
+    },
+    {
+      "canonical_name": "vici",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "231 matches"
+    },
+    {
+      "canonical_name": "lng",
+      "aliases": [],
+      "region": "CN",
+      "notes": "229 matches"
+    },
+    {
+      "canonical_name": "rogue european team",
+      "aliases": [],
+      "region": "EU",
+      "notes": "216 matches"
+    },
+    {
+      "canonical_name": "mad lions",
+      "aliases": [],
+      "region": "EU",
+      "notes": "209 matches"
+    },
+    {
+      "canonical_name": "gambit",
+      "aliases": [],
+      "region": "VN",
+      "notes": "208 matches"
+    },
+    {
+      "canonical_name": "drx",
+      "aliases": [],
+      "region": "KR",
+      "notes": "203 matches"
+    },
+    {
+      "canonical_name": "team roccat",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "203 matches"
+    },
+    {
+      "canonical_name": "snake",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "202 matches"
+    },
+    {
+      "canonical_name": "jin air green wings",
+      "aliases": [],
+      "region": "KR",
+      "notes": "194 matches"
+    },
+    {
+      "canonical_name": "suning",
+      "aliases": [],
+      "region": "CN",
+      "notes": "185 matches"
+    },
+    {
+      "canonical_name": "excel",
+      "aliases": [],
+      "region": "EU",
+      "notes": "179 matches"
+    },
+    {
+      "canonical_name": "fc schalke 04",
+      "aliases": [],
+      "region": "EU",
+      "notes": "179 matches"
+    },
+    {
+      "canonical_name": "splyce",
+      "aliases": [],
+      "region": "EU",
+      "notes": "176 matches"
+    },
+    {
+      "canonical_name": "h2kgaming",
+      "aliases": [],
+      "region": "EU",
+      "notes": "174 matches"
+    },
+    {
+      "canonical_name": "origen",
+      "aliases": [],
+      "region": "CN",
+      "notes": "169 matches"
+    },
+    {
+      "canonical_name": "unicorns of love",
+      "aliases": [],
+      "region": "EU",
+      "notes": "169 matches"
+    },
+    {
+      "canonical_name": "nongshim redforce",
+      "aliases": [],
+      "region": "BR",
+      "notes": "162 matches"
+    },
+    {
+      "canonical_name": "rogue warriors",
+      "aliases": [],
+      "region": "EU",
+      "notes": "161 matches"
+    },
+    {
+      "canonical_name": "echo fox",
+      "aliases": [],
+      "region": "NA",
+      "notes": "158 matches"
+    },
+    {
+      "canonical_name": "giants",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "158 matches"
+    },
+    {
+      "canonical_name": "victory five",
+      "aliases": [],
+      "region": "CN",
+      "notes": "147 matches"
+    },
+    {
+      "canonical_name": "thundertalk",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "144 matches"
+    },
+    {
+      "canonical_name": "samsung galaxy",
+      "aliases": [],
+      "region": "KR",
+      "notes": "142 matches"
+    },
+    {
+      "canonical_name": "rare atom",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "137 matches"
+    },
+    {
+      "canonical_name": "team curse",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "137 matches"
+    },
+    {
+      "canonical_name": "weibo",
+      "aliases": [],
+      "region": "CN",
+      "notes": "129 matches"
+    },
+    {
+      "canonical_name": "copenhagen wolves",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "127 matches"
+    },
+    {
+      "canonical_name": "liiv sandbox",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "120 matches"
+    },
+    {
+      "canonical_name": "team bds",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "119 matches"
+    },
+    {
+      "canonical_name": "kwangdong freecs",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "117 matches"
+    },
+    {
+      "canonical_name": "damwon",
+      "aliases": [],
+      "region": "KR",
+      "notes": "116 matches"
+    },
+    {
+      "canonical_name": "dwg kia",
+      "aliases": [],
+      "region": "KR",
+      "notes": "116 matches"
+    },
+    {
+      "canonical_name": "ultra prime",
+      "aliases": [],
+      "region": "CN",
+      "notes": "116 matches"
+    },
+    {
+      "canonical_name": "rox tigers",
+      "aliases": [],
+      "region": "CN",
+      "notes": "109 matches"
+    },
+    {
+      "canonical_name": "anyones legend",
+      "aliases": [],
+      "region": "CN",
+      "notes": "107 matches"
+    },
+    {
+      "canonical_name": "astralis",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "105 matches"
+    },
+    {
+      "canonical_name": "dplus kia",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "103 matches"
+    },
+    {
+      "canonical_name": "mvp",
+      "aliases": [],
+      "region": "KR",
+      "notes": "103 matches"
+    },
+    {
+      "canonical_name": "kingzone dragonx",
+      "aliases": [],
+      "region": "KR",
+      "notes": "100 matches"
+    },
+    {
+      "canonical_name": "clutch",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "96 matches"
+    },
+    {
+      "canonical_name": "cj entus",
+      "aliases": [],
+      "region": "KR",
+      "notes": "95 matches"
+    },
+    {
+      "canonical_name": "griffin korean team",
+      "aliases": [],
+      "region": "KR",
+      "notes": "95 matches"
+    },
+    {
+      "canonical_name": "flash wolves",
+      "aliases": [],
+      "region": "TW",
+      "notes": "90 matches"
+    },
+    {
+      "canonical_name": "nrg",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "90 matches"
+    },
+    {
+      "canonical_name": "millenium",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "89 matches"
+    },
+    {
+      "canonical_name": "longzhu",
+      "aliases": [],
+      "region": "KR",
+      "notes": "86 matches"
+    },
+    {
+      "canonical_name": "sandbox",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "80 matches"
+    },
+    {
+      "canonical_name": "fredit brion",
+      "aliases": [],
+      "region": "BR",
+      "notes": "78 matches"
+    },
+    {
+      "canonical_name": "bbq olivers",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "76 matches"
+    },
+    {
+      "canonical_name": "i may",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "76 matches"
+    },
+    {
+      "canonical_name": "ninjas in pyjamascn",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "76 matches"
+    },
+    {
+      "canonical_name": "team coast",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "76 matches"
+    },
+    {
+      "canonical_name": "optic",
+      "aliases": [],
+      "region": "NA",
+      "notes": "75 matches"
+    },
+    {
+      "canonical_name": "positive energy",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "72 matches"
+    },
+    {
+      "canonical_name": "royal club",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "71 matches"
+    },
+    {
+      "canonical_name": "evil geniuseseu",
+      "aliases": [],
+      "region": "NA",
+      "notes": "70 matches"
+    },
+    {
+      "canonical_name": "psg talon",
+      "aliases": [],
+      "region": "TW",
+      "notes": "70 matches"
+    },
+    {
+      "canonical_name": "team vulcun",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "69 matches"
+    },
+    {
+      "canonical_name": "alliance",
+      "aliases": [],
+      "region": "EU",
+      "notes": "68 matches"
+    },
+    {
+      "canonical_name": "meetyourmakers",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "68 matches"
+    },
+    {
+      "canonical_name": "team heretics",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "68 matches"
+    },
+    {
+      "canonical_name": "TES",
+      "aliases": [],
+      "region": "CN",
+      "notes": "66 matches"
+    },
+    {
+      "canonical_name": "masters 3",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "66 matches"
+    },
+    {
+      "canonical_name": "AL",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "65 matches"
+    },
+    {
+      "canonical_name": "BLG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "65 matches"
+    },
+    {
+      "canonical_name": "topsports",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "64 matches"
+    },
+    {
+      "canonical_name": "oksavingsbank brion",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "63 matches"
+    },
+    {
+      "canonical_name": "phoenix1",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "63 matches"
+    },
+    {
+      "canonical_name": "team impulse",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "63 matches"
+    },
+    {
+      "canonical_name": "star horn royal club",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "62 matches"
+    },
+    {
+      "canonical_name": "T1",
+      "aliases": [],
+      "region": "KR",
+      "notes": "60 matches"
+    },
+    {
+      "canonical_name": "incredible miracle",
+      "aliases": [],
+      "region": "BR",
+      "notes": "60 matches"
+    },
+    {
+      "canonical_name": "newbee",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "60 matches"
+    },
+    {
+      "canonical_name": "HLE",
+      "aliases": [],
+      "region": "KR",
+      "notes": "59 matches"
+    },
+    {
+      "canonical_name": "qiao gu reapers",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "58 matches"
+    },
+    {
+      "canonical_name": "supa hot crew",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "58 matches"
+    },
+    {
+      "canonical_name": "team envyus",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "58 matches"
+    },
+    {
+      "canonical_name": "GEN",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "57 matches"
+    },
+    {
+      "canonical_name": "kongdoo monster",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "57 matches"
+    },
+    {
+      "canonical_name": "lmq",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "57 matches"
+    },
+    {
+      "canonical_name": "complexity",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "56 matches"
+    },
+    {
+      "canonical_name": "WBG",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "55 matches"
+    },
+    {
+      "canonical_name": "elements",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "54 matches"
+    },
+    {
+      "canonical_name": "JDG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "53 matches"
+    },
+    {
+      "canonical_name": "estar chinese team",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "53 matches"
+    },
+    {
+      "canonical_name": "DK",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "52 matches"
+    },
+    {
+      "canonical_name": "IG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "52 matches"
+    },
+    {
+      "canonical_name": "detonation focusme",
+      "aliases": [],
+      "region": "JP",
+      "notes": "52 matches"
+    },
+    {
+      "canonical_name": "NS",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "51 matches"
+    },
+    {
+      "canonical_name": "dominus",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "51 matches"
+    },
+    {
+      "canonical_name": "team king",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "51 matches"
+    },
+    {
+      "canonical_name": "KT",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "50 matches"
+    },
+    {
+      "canonical_name": "WE",
+      "aliases": [],
+      "region": "CN",
+      "notes": "49 matches"
+    },
+    {
+      "canonical_name": "FPX",
+      "aliases": [],
+      "region": "CN",
+      "notes": "47 matches"
+    },
+    {
+      "canonical_name": "G2",
+      "aliases": [],
+      "region": "EU",
+      "notes": "47 matches"
+    },
+    {
+      "canonical_name": "ninjas in pyjamas",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "47 matches"
+    },
+    {
+      "canonical_name": "BFX",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "46 matches"
+    },
+    {
+      "canonical_name": "NIP",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "46 matches"
+    },
+    {
+      "canonical_name": "CFO",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "45 matches"
+    },
+    {
+      "canonical_name": "MKOI",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "45 matches"
+    },
+    {
+      "canonical_name": "mad lions koi",
+      "aliases": [],
+      "region": "EU",
+      "notes": "45 matches"
+    },
+    {
+      "canonical_name": "ahq esports club",
+      "aliases": [],
+      "region": "TW",
+      "notes": "43 matches"
+    },
+    {
+      "canonical_name": "young glory",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "43 matches"
+    },
+    {
+      "canonical_name": "game talents",
+      "aliases": [],
+      "region": "VN",
+      "notes": "42 matches"
+    },
+    {
+      "canonical_name": "team alternate",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "42 matches"
+    },
+    {
+      "canonical_name": "FLY",
+      "aliases": [],
+      "region": "NA",
+      "notes": "40 matches"
+    },
+    {
+      "canonical_name": "KC",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "40 matches"
+    },
+    {
+      "canonical_name": "TT",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "40 matches"
+    },
+    {
+      "canonical_name": "against all authority",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "40 matches"
+    },
+    {
+      "canonical_name": "gravity north american team",
+      "aliases": [],
+      "region": "EU",
+      "notes": "40 matches"
+    },
+    {
+      "canonical_name": "GAM",
+      "aliases": [],
+      "region": "VN",
+      "notes": "39 matches"
+    },
+    {
+      "canonical_name": "najin emfire",
+      "aliases": [],
+      "region": "KR",
+      "notes": "39 matches"
+    },
+    {
+      "canonical_name": "BRO",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "38 matches"
+    },
+    {
+      "canonical_name": "DRX",
+      "aliases": [],
+      "region": "KR",
+      "notes": "38 matches"
+    },
+    {
+      "canonical_name": "cj entus frost",
+      "aliases": [],
+      "region": "KR",
+      "notes": "38 matches"
+    },
+    {
+      "canonical_name": "lemondogs",
+      "aliases": [],
+      "region": "EU",
+      "notes": "38 matches"
+    },
+    {
+      "canonical_name": "sbenu sonicboom",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "38 matches"
+    },
+    {
+      "canonical_name": "team 8",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "38 matches"
+    },
+    {
+      "canonical_name": "FNC",
+      "aliases": [],
+      "region": "EU",
+      "notes": "37 matches"
+    },
+    {
+      "canonical_name": "cj entus blaze",
+      "aliases": [],
+      "region": "KR",
+      "notes": "37 matches"
+    },
+    {
+      "canonical_name": "DNF",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "36 matches"
+    },
+    {
+      "canonical_name": "energy pacemakerhk",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "36 matches"
+    },
+    {
+      "canonical_name": "koi spanish team",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "36 matches"
+    },
+    {
+      "canonical_name": "PSG",
+      "aliases": [],
+      "region": "TW",
+      "notes": "35 matches"
+    },
+    {
+      "canonical_name": "giantx",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "34 matches"
+    },
+    {
+      "canonical_name": "100T",
+      "aliases": [],
+      "region": "NA",
+      "notes": "33 matches"
+    },
+    {
+      "canonical_name": "TSW",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "33 matches"
+    },
+    {
+      "canonical_name": "najin white shield",
+      "aliases": [],
+      "region": "KR",
+      "notes": "33 matches"
+    },
+    {
+      "canonical_name": "unicorns of lovecis",
+      "aliases": [],
+      "region": "EU",
+      "notes": "33 matches"
+    },
+    {
+      "canonical_name": "VKE",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "31 matches"
+    },
+    {
+      "canonical_name": "gam",
+      "aliases": [],
+      "region": "VN",
+      "notes": "31 matches"
+    },
+    {
+      "canonical_name": "good game university",
+      "aliases": [],
+      "region": "VN",
+      "notes": "31 matches"
+    },
+    {
+      "canonical_name": "karmine corp",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "31 matches"
+    },
+    {
+      "canonical_name": "supermassive",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "31 matches"
+    },
+    {
+      "canonical_name": "wings of aurora",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "31 matches"
+    },
+    {
+      "canonical_name": "TL",
+      "aliases": [],
+      "region": "NA",
+      "notes": "30 matches"
+    },
+    {
+      "canonical_name": "esc ever",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "30 matches"
+    },
+    {
+      "canonical_name": "koo tigers",
+      "aliases": [],
+      "region": "CN",
+      "notes": "30 matches"
+    },
+    {
+      "canonical_name": "pain",
+      "aliases": [],
+      "region": "BR",
+      "notes": "30 matches"
+    },
+    {
+      "canonical_name": "VKS",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "29 matches"
+    },
+    {
+      "canonical_name": "C9",
+      "aliases": [],
+      "region": "NA",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "EDG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "FUR",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "GX",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "UP",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "dragonborns",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "kt rolster bullets",
+      "aliases": [],
+      "region": "KR",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "team livemore",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "team mrn",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "velocity",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "wayi spider china",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "xdg",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "28 matches"
+    },
+    {
+      "canonical_name": "TH",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "27 matches"
+    },
+    {
+      "canonical_name": "VIT",
+      "aliases": [],
+      "region": "EU",
+      "notes": "27 matches"
+    },
+    {
+      "canonical_name": "BDS",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "26 matches"
+    },
+    {
+      "canonical_name": "PNG",
+      "aliases": [],
+      "region": "BR",
+      "notes": "26 matches"
+    },
+    {
+      "canonical_name": "LGD",
+      "aliases": [],
+      "region": "CN",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "RED",
+      "aliases": [],
+      "region": "BR",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "SR",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "bnk fearx",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "energy pacemaker",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "gigabyte marines",
+      "aliases": [],
+      "region": "CN",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "najin sword",
+      "aliases": [],
+      "region": "KR",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "phong vũ buffalo",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "unlimited potential",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "25 matches"
+    },
+    {
+      "canonical_name": "LLL",
+      "aliases": [],
+      "region": "BR",
+      "notes": "24 matches"
+    },
+    {
+      "canonical_name": "SHG",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "24 matches"
+    },
+    {
+      "canonical_name": "dragonx",
+      "aliases": [],
+      "region": "KR",
+      "notes": "24 matches"
+    },
+    {
+      "canonical_name": "samsung blue",
+      "aliases": [],
+      "region": "KR",
+      "notes": "24 matches"
+    },
+    {
+      "canonical_name": "DFM",
+      "aliases": [],
+      "region": "JP",
+      "notes": "23 matches"
+    },
+    {
+      "canonical_name": "azubu blaze",
+      "aliases": [],
+      "region": "KR",
+      "notes": "23 matches"
+    },
+    {
+      "canonical_name": "gamtee",
+      "aliases": [],
+      "region": "VN",
+      "notes": "23 matches"
+    },
+    {
+      "canonical_name": "isurus",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "23 matches"
+    },
+    {
+      "canonical_name": "ISG",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "22 matches"
+    },
+    {
+      "canonical_name": "LNG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "22 matches"
+    },
+    {
+      "canonical_name": "NAVI",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "22 matches"
+    },
+    {
+      "canonical_name": "SK",
+      "aliases": [],
+      "region": "EU",
+      "notes": "22 matches"
+    },
+    {
+      "canonical_name": "saigon buffalo",
+      "aliases": [],
+      "region": "CN",
+      "notes": "22 matches"
+    },
+    {
+      "canonical_name": "saint",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "22 matches"
+    },
+    {
+      "canonical_name": "samsung ozone",
+      "aliases": [],
+      "region": "KR",
+      "notes": "22 matches"
+    },
+    {
+      "canonical_name": "apk prince",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "21 matches"
+    },
+    {
+      "canonical_name": "dire wolves",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "21 matches"
+    },
+    {
+      "canonical_name": "ever8 winners",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "21 matches"
+    },
+    {
+      "canonical_name": "shopify rebellion",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "21 matches"
+    },
+    {
+      "canonical_name": "xenics storm",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "21 matches"
+    },
+    {
+      "canonical_name": "young miracles",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "21 matches"
+    },
+    {
+      "canonical_name": "LEV",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "20 matches"
+    },
+    {
+      "canonical_name": "azubu frost",
+      "aliases": [],
+      "region": "KR",
+      "notes": "20 matches"
+    },
+    {
+      "canonical_name": "team dynamics",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "20 matches"
+    },
+    {
+      "canonical_name": "CHF",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "DIG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "fenerbahçe",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "hong kong attitude",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "ksv",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "pentanetgg",
+      "aliases": [],
+      "region": "NA",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "renegades",
+      "aliases": [],
+      "region": "NA",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "sinodragon",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "19 matches"
+    },
+    {
+      "canonical_name": "DSG",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "apex",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "brion",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "dan",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "enemy",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "energy pacemakerall",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "fearx",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "ge tigers",
+      "aliases": [],
+      "region": "CN",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "hyper youth",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "intz",
+      "aliases": [],
+      "region": "BR",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "istanbul wildcats",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "mvp blue",
+      "aliases": [],
+      "region": "KR",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "red canids",
+      "aliases": [],
+      "region": "BR",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "seolhaeone prince",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "team dragon knights",
+      "aliases": [],
+      "region": "CN",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "winterfox",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "18 matches"
+    },
+    {
+      "canonical_name": "FX7M",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "17 matches"
+    },
+    {
+      "canonical_name": "LYON",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "17 matches"
+    },
+    {
+      "canonical_name": "kabum",
+      "aliases": [],
+      "region": "BR",
+      "notes": "17 matches"
+    },
+    {
+      "canonical_name": "qg reapers",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "17 matches"
+    },
+    {
+      "canonical_name": "sk telecom t1 k",
+      "aliases": [],
+      "region": "KR",
+      "notes": "17 matches"
+    },
+    {
+      "canonical_name": "team we academy",
+      "aliases": [],
+      "region": "CN",
+      "notes": "17 matches"
+    },
+    {
+      "canonical_name": "kt rolster b",
+      "aliases": [],
+      "region": "KR",
+      "notes": "16 matches"
+    },
+    {
+      "canonical_name": "najin shield",
+      "aliases": [],
+      "region": "KR",
+      "notes": "16 matches"
+    },
+    {
+      "canonical_name": "samsung white",
+      "aliases": [],
+      "region": "KR",
+      "notes": "16 matches"
+    },
+    {
+      "canonical_name": "shu dai xiong",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "16 matches"
+    },
+    {
+      "canonical_name": "infinity",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "15 matches"
+    },
+    {
+      "canonical_name": "loud",
+      "aliases": [],
+      "region": "BR",
+      "notes": "15 matches"
+    },
+    {
+      "canonical_name": "najin black sword",
+      "aliases": [],
+      "region": "KR",
+      "notes": "15 matches"
+    },
+    {
+      "canonical_name": "OMG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "14 matches"
+    },
+    {
+      "canonical_name": "RNG",
+      "aliases": [],
+      "region": "CN",
+      "notes": "14 matches"
+    },
+    {
+      "canonical_name": "grex",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "14 matches"
+    },
+    {
+      "canonical_name": "kaos latin gamers",
+      "aliases": [],
+      "region": "VN",
+      "notes": "14 matches"
+    },
+    {
+      "canonical_name": "mvp ozone",
+      "aliases": [],
+      "region": "KR",
+      "notes": "14 matches"
+    },
+    {
+      "canonical_name": "sk telecom t1 2",
+      "aliases": [],
+      "region": "KR",
+      "notes": "14 matches"
+    },
+    {
+      "canonical_name": "sk telecom t1 s",
+      "aliases": [],
+      "region": "KR",
+      "notes": "14 matches"
+    },
+    {
+      "canonical_name": "evos",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "13 matches"
+    },
+    {
+      "canonical_name": "jin air green wings falcons",
+      "aliases": [],
+      "region": "KR",
+      "notes": "13 matches"
+    },
+    {
+      "canonical_name": "lyon gaming 2013 latin american team",
+      "aliases": [],
+      "region": "VN",
+      "notes": "13 matches"
+    },
+    {
+      "canonical_name": "mysterious monkeys",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "13 matches"
+    },
+    {
+      "canonical_name": "taipei assassins",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "13 matches"
+    },
+    {
+      "canonical_name": "team sypher",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "13 matches"
+    },
+    {
+      "canonical_name": "beyond",
+      "aliases": [],
+      "region": "OCE",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "eqx",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "incredible miracle 2",
+      "aliases": [],
+      "region": "BR",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "j team",
+      "aliases": [],
+      "region": "TW",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "kt rolster a",
+      "aliases": [],
+      "region": "KR",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "legend dragon",
+      "aliases": [],
+      "region": "NA",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "machi",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "moscow five",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "sk telecom t1 1",
+      "aliases": [],
+      "region": "KR",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "team op",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "12 matches"
+    },
+    {
+      "canonical_name": "anexis",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "11 matches"
+    },
+    {
+      "canonical_name": "kt rolster arrows",
+      "aliases": [],
+      "region": "KR",
+      "notes": "11 matches"
+    },
+    {
+      "canonical_name": "mad team",
+      "aliases": [],
+      "region": "EU",
+      "notes": "11 matches"
+    },
+    {
+      "canonical_name": "rainbow7",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "11 matches"
+    },
+    {
+      "canonical_name": "rebels anarchy",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "11 matches"
+    },
+    {
+      "canonical_name": "ascension",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "10 matches"
+    },
+    {
+      "canonical_name": "bangkok titans",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "10 matches"
+    },
+    {
+      "canonical_name": "ehome",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "10 matches"
+    },
+    {
+      "canonical_name": "jin air green wings stealths",
+      "aliases": [],
+      "region": "KR",
+      "notes": "10 matches"
+    },
+    {
+      "canonical_name": "max chinese team",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "10 matches"
+    },
+    {
+      "canonical_name": "mega",
+      "aliases": [],
+      "region": "NA",
+      "notes": "10 matches"
+    },
+    {
+      "canonical_name": "rampage",
+      "aliases": [],
+      "region": "Unknown",
+      "notes": "10 matches"
+    },
+    {
+      "canonical_name": "vega squadron",
+      "aliases": [],
+      "region": "NA",
+      "notes": "10 matches"
+    }
+  ],
+  "fuzzy_matching_rules": {
+    "enabled": true,
+    "similarity_threshold": 0.85,
+    "ignore_case": true,
+    "remove_suffixes": [
+      "LoL",
+      "Esports",
+      "Gaming",
+      "E-Sports"
+    ],
+    "normalize_spaces": true
+  }
+}

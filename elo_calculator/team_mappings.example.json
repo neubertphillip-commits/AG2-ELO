@@ -1,0 +1,20 @@
+{
+  "_comment": "Example manual team name mappings",
+  "_usage": "Copy to data/team_mappings.json and customize",
+  "_format": "{ 'raw_name_from_api': 'canonical_team_id' }",
+
+  "SK Telecom T1": "T1",
+  "SKT": "T1",
+  "SKT T1": "T1",
+
+  "TSM FTX": "TSM",
+
+  "Cloud 9": "Cloud9",
+  "C9": "Cloud9",
+
+  "Samsung Galaxy": "Gen.G",
+  "Samsung": "Gen.G",
+
+  "Moscow Five": "Gambit Gaming",
+  "M5": "Gambit Gaming"
+}

@@ -1,0 +1,2031 @@
+{
+  "timestamp": "2025-11-22 22:34:11",
+  "duration_seconds": 1113.2984161376953,
+  "total_tested": 338,
+  "total_found": 329,
+  "total_not_found": 9,
+  "success_rate": 97.33727810650888,
+  "found_tournaments": [
+    {
+      "name": "LPL 2013 Spring",
+      "url": "LPL/2013 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2013 Spring Playoffs",
+      "url": "LPL/2013 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LPL 2013 Summer",
+      "url": "LPL/2013 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2013 Summer Playoffs",
+      "url": "LPL/2013 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LPL 2014 Spring",
+      "url": "LPL/2014 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2014 Spring Playoffs",
+      "url": "LPL/2014 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LPL 2014 Summer",
+      "url": "LPL/2014 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2014 Summer Playoffs",
+      "url": "LPL/2014 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2015 Spring",
+      "url": "LPL/2015 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2015 Spring Playoffs",
+      "url": "LPL/2015 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2015 Summer",
+      "url": "LPL/2015 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2015 Summer Playoffs",
+      "url": "LPL/2015 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2015 Regional Finals",
+      "url": "LPL/2015 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2016 Spring",
+      "url": "LPL/2016 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2016 Spring Playoffs",
+      "url": "LPL/2016 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2016 Summer",
+      "url": "LPL/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2016 Summer Playoffs",
+      "url": "LPL/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2016 Regional Finals",
+      "url": "LPL/2016 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LPL 2017 Spring",
+      "url": "LPL/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2017 Spring Playoffs",
+      "url": "LPL/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2017 Summer",
+      "url": "LPL/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2017 Summer Playoffs",
+      "url": "LPL/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2017 Regional Finals",
+      "url": "LPL/2017 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LPL 2018 Spring",
+      "url": "LPL/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2018 Spring Playoffs",
+      "url": "LPL/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2018 Summer",
+      "url": "LPL/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2018 Summer Playoffs",
+      "url": "LPL/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2018 Regional Finals",
+      "url": "LPL/2018 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LPL 2019 Spring",
+      "url": "LPL/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2019 Spring Playoffs",
+      "url": "LPL/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2019 Summer",
+      "url": "LPL/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2019 Summer Playoffs",
+      "url": "LPL/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2019 Regional Finals",
+      "url": "LPL/2019 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 2
+    },
+    {
+      "name": "LPL 2020 Spring",
+      "url": "LPL/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2020 Spring Playoffs",
+      "url": "LPL/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2020 Summer",
+      "url": "LPL/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2020 Summer Playoffs",
+      "url": "LPL/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2020 Regional Finals",
+      "url": "LPL/2020 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LPL 2021 Spring",
+      "url": "LPL/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2021 Spring Playoffs",
+      "url": "LPL/2021 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2021 Summer",
+      "url": "LPL/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2021 Summer Playoffs",
+      "url": "LPL/2021 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2021 Regional Finals",
+      "url": "LPL/2021 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LPL 2022 Spring",
+      "url": "LPL/2022 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2022 Spring Playoffs",
+      "url": "LPL/2022 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2022 Summer",
+      "url": "LPL/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2022 Summer Playoffs",
+      "url": "LPL/2022 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2022 Regional Finals",
+      "url": "LPL/2022 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LPL 2023 Spring",
+      "url": "LPL/2023 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2023 Spring Playoffs",
+      "url": "LPL/2023 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2023 Summer",
+      "url": "LPL/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2023 Summer Playoffs",
+      "url": "LPL/2023 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2023 Regional Finals",
+      "url": "LPL/2023 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LPL 2024 Spring",
+      "url": "LPL/2024 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2024 Spring Playoffs",
+      "url": "LPL/2024 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2024 Summer",
+      "url": "LPL/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2024 Summer Playoffs",
+      "url": "LPL/2024 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LPL 2024 Regional Finals",
+      "url": "LPL/2024 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LPL 2025 Regional Finals",
+      "url": "LPL/2025 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "Demacia Cup Season 1",
+      "url": "Demacia Cup/Season 1",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup Season 2",
+      "url": "Demacia Cup/Season 2",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2015 Spring",
+      "url": "2015 Demacia cup/spring season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2015 Summer",
+      "url": "2015 Demacia cup/summer season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2015 Grand Finals",
+      "url": "2015 Demacia cup/grand finals",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "Demacia Cup 2016",
+      "url": "demacia cup/2016 season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2017",
+      "url": "demacia cup/2017 season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Championship 2017",
+      "url": "demacia championship/2017 season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2018 Winter",
+      "url": "demacia cup/2018 winter",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2018 Summer",
+      "url": "demacia cup/2018 summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2019",
+      "url": "Demacia Cup 2019",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2020",
+      "url": "Demacia Cup 2020",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2021",
+      "url": "Demacia Cup 2021",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2022",
+      "url": "Demacia Cup 2022",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2023",
+      "url": "Demacia Cup 2023",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Demacia Cup 2024",
+      "url": "Demacia Cup 2024",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2012 Spring",
+      "url": "Champions/2012 Season/Spring",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2012 Summer",
+      "url": "Champions/2012 Season/Summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2012 Regional Finals",
+      "url": "season 2/regional finals/korea",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OGN 2013 Winter",
+      "url": "Champions/2013 Season/Winter",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2013 Spring",
+      "url": "Champions/2013 Season/Spring",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2013 Summer",
+      "url": "Champions/2013 Season/Summer",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2013 Regional Finals",
+      "url": "season 3 korea regional finals",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OGN 2014 Winter",
+      "url": "Champions/2014 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2014 Spring",
+      "url": "Champions/2014 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2014 Summer",
+      "url": "Champions/2014 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2014 Regional Finals",
+      "url": "2014 season korea regional finals",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OGN 2015 Spring",
+      "url": "Champions/2015 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2015 Spring Playoffs",
+      "url": "Champions/2015 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "OGN 2015 Summer",
+      "url": "Champions/2015 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "OGN 2015 Summer Playoffs",
+      "url": "Champions/2015 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "OGN 2015 Regional Finals",
+      "url": "2015 season korea regional finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2016 Spring",
+      "url": "LCK/2016 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2016 Spring Playoffs",
+      "url": "LCK/2016 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2016 Summer",
+      "url": "LCK/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2016 Summer Playoffs",
+      "url": "LCK/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2016 Regional Finals",
+      "url": "LCK/2016 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2017 Spring",
+      "url": "LCK/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2017 Spring Playoffs",
+      "url": "LCK/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2017 Summer",
+      "url": "LCK/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2017 Summer Playoffs",
+      "url": "LCK/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2017 Regional Finals",
+      "url": "LCK/2017 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2018 Spring",
+      "url": "LCK/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2018 Spring Playoffs",
+      "url": "LCK/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2018 Summer",
+      "url": "LCK/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2018 Summer Playoffs",
+      "url": "LCK/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2018 Regional Finals",
+      "url": "LCK/2018 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2019 Spring",
+      "url": "LCK/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2019 Spring Playoffs",
+      "url": "LCK/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2019 Summer",
+      "url": "LCK/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2019 Summer Playoffs",
+      "url": "LCK/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2019 Regional Finals",
+      "url": "LCK/2019 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2020 Spring",
+      "url": "LCK/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2020 Spring Playoffs",
+      "url": "LCK/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2020 Summer",
+      "url": "LCK/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2020 Summer Playoffs",
+      "url": "LCK/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LCK 2020 Regional Finals",
+      "url": "LCK/2020 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2021 Spring",
+      "url": "LCK/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2021 Spring Playoffs",
+      "url": "LCK/2021 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2021 Summer",
+      "url": "LCK/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2021 Summer Playoffs",
+      "url": "LCK/2021 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2021 Regional Finals",
+      "url": "LCK/2021 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2022 Spring",
+      "url": "LCK/2022 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2022 Spring Playoffs",
+      "url": "LCK/2022 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2022 Summer",
+      "url": "LCK/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2022 Summer Playoffs",
+      "url": "LCK/2022 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2022 Regional Finals",
+      "url": "LCK/2022 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2023 Spring",
+      "url": "LCK/2023 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2023 Spring Playoffs",
+      "url": "LCK/2023 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2023 Summer",
+      "url": "LCK/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2023 Summer Playoffs",
+      "url": "LCK/2023 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2023 Regional Finals",
+      "url": "LCK/2023 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCK 2024 Spring",
+      "url": "LCK/2024 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2024 Spring Playoffs",
+      "url": "LCK/2024 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2024 Summer",
+      "url": "LCK/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2024 Summer Playoffs",
+      "url": "LCK/2024 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCK 2024 Regional Finals",
+      "url": "LCK/2024 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "KeSPA Cup 2015",
+      "url": "2015 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "KeSPA Cup 2016",
+      "url": "2016 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "KeSPA Cup 2017",
+      "url": "2017 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "KeSPA Cup 2018",
+      "url": "2018 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "KeSPA Cup 2019",
+      "url": "2019 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "KeSPA Cup 2020",
+      "url": "2020 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "KeSPA Cup 2021",
+      "url": "2021 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "KeSPA Cup 2024",
+      "url": "2024 lol KeSPA CUP",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2013 Spring",
+      "url": "eu lcs/season 3/spring season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2013 Spring Playoffs",
+      "url": "eu lcs/season 3/spring playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2013 Summer",
+      "url": "eu lcs/season 3/summer season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2013 Summer Playoffs",
+      "url": "eu lcs/season 3/summer playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2014 Spring",
+      "url": "EU LCS/2014 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2014 Spring Playoffs",
+      "url": "EU LCS/2014 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2014 Summer",
+      "url": "EU LCS/2014 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2014 Summer Playoffs",
+      "url": "EU LCS/2014 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2015 Spring",
+      "url": "EU LCS/2015 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2015 Spring Playoffs",
+      "url": "EU LCS/2015 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2015 Summer",
+      "url": "EU LCS/2015 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2015 Summer Playoffs",
+      "url": "EU LCS/2015 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2015 Regional Finals",
+      "url": "EU LCS/2015 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "EU LCS 2016 Spring",
+      "url": "EU LCS/2016 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2016 Spring Playoffs",
+      "url": "EU LCS/2016 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2016 Summer",
+      "url": "EU LCS/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2016 Summer Playoffs",
+      "url": "EU LCS/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2016 Regional Finals",
+      "url": "EU LCS/2016 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "EU LCS 2017 Spring",
+      "url": "EU LCS/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2017 Spring Playoffs",
+      "url": "EU LCS/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2017 Summer",
+      "url": "EU LCS/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2017 Summer Playoffs",
+      "url": "EU LCS/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2017 Regional Finals",
+      "url": "EU LCS/2017 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "EU LCS 2018 Spring",
+      "url": "EU LCS/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2018 Spring Playoffs",
+      "url": "EU LCS/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2018 Summer",
+      "url": "EU LCS/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2018 Summer Playoffs",
+      "url": "EU LCS/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "EU LCS 2018 Regional Finals",
+      "url": "EU LCS/2018 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LEC 2019 Spring",
+      "url": "LEC/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2019 Spring Playoffs",
+      "url": "LEC/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2019 Summer",
+      "url": "LEC/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2019 Summer Playoffs",
+      "url": "LEC/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2019 Regional Finals",
+      "url": "LEC/2019 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LEC 2020 Spring",
+      "url": "LEC/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2020 Spring Playoffs",
+      "url": "LEC/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2020 Summer",
+      "url": "LEC/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2020 Summer Playoffs",
+      "url": "LEC/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2021 Spring",
+      "url": "LEC/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2021 Spring Playoffs",
+      "url": "LEC/2021 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2021 Summer",
+      "url": "LEC/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2021 Summer Playoffs",
+      "url": "LEC/2021 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2022 Spring",
+      "url": "LEC/2022 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2022 Spring Playoffs",
+      "url": "LEC/2022 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2022 Summer",
+      "url": "LEC/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2022 Summer Playoffs",
+      "url": "LEC/2022 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2023 Winter",
+      "url": "LEC/2023 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2023 Winter Groups",
+      "url": "LEC/2023 Season/Winter Groups",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2023 Winter Playoffs",
+      "url": "LEC/2023 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LEC 2023 Spring",
+      "url": "LEC/2023 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2023 Spring Groups",
+      "url": "LEC/2023 Season/Spring Groups",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2023 Spring Playoffs",
+      "url": "LEC/2023 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LEC 2023 Summer",
+      "url": "LEC/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2023 Summer Groups",
+      "url": "LEC/2023 Season/Summer Groups",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2023 Summer Playoffs",
+      "url": "LEC/2023 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 4
+    },
+    {
+      "name": "LEC 2024 Winter",
+      "url": "LEC/2024 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2024 Winter Playoffs",
+      "url": "LEC/2024 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2024 Spring",
+      "url": "LEC/2024 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2024 Spring Playoffs",
+      "url": "LEC/2024 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2024 Summer",
+      "url": "LEC/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2024 Summer Playoffs",
+      "url": "LEC/2024 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2025 Winter",
+      "url": "LEC/2025 Season/Winter Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2025 Winter Playoffs",
+      "url": "LEC/2025 Season/Winter Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2025 Spring",
+      "url": "LEC/2025 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2025 Spring Playoffs",
+      "url": "LEC/2025 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2025 Summer",
+      "url": "LEC/2025 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LEC 2025 Summer Playoffs",
+      "url": "LEC/2025 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2013 Spring",
+      "url": "na lcs/season 3/spring season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2013 Spring Playoffs",
+      "url": "na lcs/season 3/spring playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2013 Summer",
+      "url": "na lcs/season 3/summer season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2013 Summer Playoffs",
+      "url": "na lcs/season 3/summer playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2014 Spring",
+      "url": "NA LCS/2014 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2014 Spring Playoffs",
+      "url": "NA LCS/2014 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2014 Summer",
+      "url": "NA LCS/2014 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2014 Summer Playoffs",
+      "url": "NA LCS/2014 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2015 Spring",
+      "url": "NA LCS/2015 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2015 Spring Playoffs",
+      "url": "NA LCS/2015 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2015 Summer",
+      "url": "NA LCS/2015 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2015 Summer Playoffs",
+      "url": "NA LCS/2015 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2015 Regional Finals",
+      "url": "NA LCS/2015 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "NA LCS 2016 Spring",
+      "url": "NA LCS/2016 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2016 Spring Playoffs",
+      "url": "NA LCS/2016 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2016 Summer",
+      "url": "NA LCS/2016 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2016 Summer Playoffs",
+      "url": "NA LCS/2016 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2016 Regional Finals",
+      "url": "NA LCS/2016 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "NA LCS 2017 Spring",
+      "url": "NA LCS/2017 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2017 Spring Playoffs",
+      "url": "NA LCS/2017 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2017 Summer",
+      "url": "NA LCS/2017 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2017 Summer Playoffs",
+      "url": "NA LCS/2017 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2017 Regional Finals",
+      "url": "NA LCS/2017 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "NA LCS 2018 Spring",
+      "url": "NA LCS/2018 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2018 Spring Playoffs",
+      "url": "NA LCS/2018 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2018 Summer",
+      "url": "NA LCS/2018 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2018 Summer Playoffs",
+      "url": "NA LCS/2018 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "NA LCS 2018 Regional Finals",
+      "url": "NA LCS/2018 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCS 2019 Spring",
+      "url": "LCS/2019 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2019 Spring Playoffs",
+      "url": "LCS/2019 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2019 Summer",
+      "url": "LCS/2019 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2019 Summer Playoffs",
+      "url": "LCS/2019 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2019 Regional Finals",
+      "url": "LCS/2019 Season/Regional Finals",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "LCS 2020 Spring",
+      "url": "LCS/2020 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2020 Spring Playoffs",
+      "url": "LCS/2020 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2020 Summer",
+      "url": "LCS/2020 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2020 Summer Playoffs",
+      "url": "LCS/2020 Season/Summer Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2021 Lock In",
+      "url": "LCS/2021 Season/Lock In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2021 Spring",
+      "url": "LCS/2021 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2021 Mid-Season Showdown",
+      "url": "LCS/2021 Season/Mid-Season Showdown",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2021 Summer",
+      "url": "LCS/2021 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2021 Championship",
+      "url": "LCS/2021 Season/Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2022 Lock In",
+      "url": "LCS/2022 Season/Lock In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2022 Spring",
+      "url": "LCS/2022 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2022 Spring Playoffs",
+      "url": "LCS/2022 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2022 Summer",
+      "url": "LCS/2022 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2022 Championship",
+      "url": "LCS/2022 Season/Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2023 Spring",
+      "url": "LCS/2023 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2023 Spring Playoffs",
+      "url": "LCS/2023 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2023 Summer",
+      "url": "LCS/2023 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2023 Championship",
+      "url": "LCS/2023 Season/Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2024 Spring",
+      "url": "LCS/2024 Season/Spring Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2024 Spring Playoffs",
+      "url": "LCS/2024 Season/Spring Playoffs",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2024 Summer",
+      "url": "LCS/2024 Season/Summer Season",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "LCS 2024 Championship",
+      "url": "LCS/2024 Season/Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2013",
+      "url": "Season 3 World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2014",
+      "url": "2014 Season World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2015",
+      "url": "2015 Season World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2016",
+      "url": "2016 Season World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2017 Play-In",
+      "url": "2017 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2017 Main Event",
+      "url": "2017 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2018 Play-In",
+      "url": "2018 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2018 Main Event",
+      "url": "2018 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2019 Play-In",
+      "url": "2019 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2019 Main Event",
+      "url": "2019 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2020 Play-In",
+      "url": "2020 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2020 Main Event",
+      "url": "2020 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2021 Play-In",
+      "url": "2021 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2021 Main Event",
+      "url": "2021 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2022 Play-In",
+      "url": "2022 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2022 Main Event",
+      "url": "2022 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2023 Play-In",
+      "url": "2023 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2023 Main Event",
+      "url": "2023 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2024 Play-In",
+      "url": "2024 Season World Championship/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Worlds 2024 Main Event",
+      "url": "2024 Season World Championship/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2015",
+      "url": "2015 Mid-Season Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2016",
+      "url": "2016 Mid-Season Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2017 Play-In",
+      "url": "2017 Mid-Season Invitational/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2017 Main Event",
+      "url": "2017 Mid-Season Invitational/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2018 Play-In",
+      "url": "2018 Mid-Season Invitational/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2018 Main Event",
+      "url": "2018 Mid-Season Invitational/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2019 Play-In",
+      "url": "2019 Mid-Season Invitational/Play-In",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2019 Main Event",
+      "url": "2019 Mid-Season Invitational/Main Event",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2021",
+      "url": "2021 Mid-Season Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2022",
+      "url": "2022 Mid-Season Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2023",
+      "url": "2023 Mid-Season Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "MSI 2024",
+      "url": "2024 Mid-Season Invitational",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VI Global Challenge Cologne",
+      "url": "IEM Season VI - Global Challenge Cologne",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VI Global Challenge Guangzhou",
+      "url": "IEM Season VI - Global Challenge Guangzhou",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VI Global Challenge New York",
+      "url": "IEM Season VI - Global Challenge New York",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VI Global Challenge Kiev",
+      "url": "IEM Season VI - Global Challenge Kiev",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VI World Championship",
+      "url": "IEM Season VI - World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VII Global Challenge Cologne",
+      "url": "IEM Season VII - Global Challenge Cologne",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VII Global Challenge Singapore",
+      "url": "IEM Season VII - Global Challenge Singapore",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VII Global Challenge Katowice",
+      "url": "IEM Season VII - Global Challenge Katowice",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VII Global Challenge Sao Paulo",
+      "url": "IEM Season VII - Global Challenge Sao Paulo",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VII World Championship",
+      "url": "IEM Season VII - World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VIII Cologne",
+      "url": "IEM Season VIII - Cologne",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VIII Shanghai",
+      "url": "IEM Season VIII - Shanghai",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "IEM Season VIII Singapore",
+      "url": "IEM Season VIII - Singapore",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VIII Sao Paulo",
+      "url": "IEM Season VIII - Sao Paulo",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season VIII World Championship",
+      "url": "IEM Season VIII - World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season IX Shenzhen",
+      "url": "IEM Season IX - Shenzhen",
+      "found": true,
+      "sample_matches": 3
+    },
+    {
+      "name": "IEM Season IX San Jose",
+      "url": "IEM Season IX - San Jose",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season IX Cologne",
+      "url": "IEM Season IX - Cologne",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season IX Taipei",
+      "url": "IEM Season IX - Taipei",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season IX World Championship",
+      "url": "IEM Season IX - World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season X San Jose",
+      "url": "IEM Season X - San Jose",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season X Cologne",
+      "url": "IEM Season X - Cologne",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season X World Championship",
+      "url": "IEM Season X - World Championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season 11 Oakland",
+      "url": "IEM season 11/oakland",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season 11 Gyeonggi",
+      "url": "IEM season 11/gyeonggi",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "IEM Season 11 World Championship",
+      "url": "IEM season 11/world championship",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2017 NA-EU",
+      "url": "Rift Rivals 2017/NA-EU",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2017 LCK-LPL-LMS",
+      "url": "Rift Rivals 2017/LCK-LPL-LMS",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2018 NA-EU",
+      "url": "Rift Rivals 2018/NA-EU",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2018 LCK-LPL-LMS",
+      "url": "Rift Rivals 2018/LCK-LPL-LMS",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2019 NA-EU",
+      "url": "Rift Rivals 2019/NA-EU",
+      "found": true,
+      "sample_matches": 5
+    },
+    {
+      "name": "Rift Rivals 2019 LCK-LPL-LMS-VCS",
+      "url": "Rift Rivals 2019/LCK-LPL-LMS-VCS",
+      "found": true,
+      "sample_matches": 5
+    }
+  ],
+  "not_found_tournaments": [
+    {
+      "name": "LPL 2025 Spring",
+      "url": "LPL/2025 Season/Spring Season",
+      "found": false
+    },
+    {
+      "name": "LPL 2025 Spring Playoffs",
+      "url": "LPL/2025 Season/Spring Playoffs",
+      "found": false
+    },
+    {
+      "name": "LPL 2025 Summer",
+      "url": "LPL/2025 Season/Summer Season",
+      "found": false
+    },
+    {
+      "name": "LPL 2025 Summer Playoffs",
+      "url": "LPL/2025 Season/Summer Playoffs",
+      "found": false
+    },
+    {
+      "name": "LCK 2025 Spring",
+      "url": "LCK/2025 Season/Spring Season",
+      "found": false
+    },
+    {
+      "name": "LCK 2025 Spring Playoffs",
+      "url": "LCK/2025 Season/Spring Playoffs",
+      "found": false
+    },
+    {
+      "name": "LCK 2025 Summer",
+      "url": "LCK/2025 Season/Summer Season",
+      "found": false
+    },
+    {
+      "name": "LCK 2025 Summer Playoffs",
+      "url": "LCK/2025 Season/Summer Playoffs",
+      "found": false
+    },
+    {
+      "name": "LCK 2025 Regional Finals",
+      "url": "LCK/2025 Season/Regional Finals",
+      "found": false
+    }
+  ]
+}

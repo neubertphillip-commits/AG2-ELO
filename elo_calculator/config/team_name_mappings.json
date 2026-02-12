@@ -1,0 +1,276 @@
+{
+  "_comment": "Maps team names from different sources to canonical names",
+  "_sources": {
+    "lolesports": "Official Lolesports API",
+    "leaguepedia": "Leaguepedia/LOL Fandom Wiki",
+    "google_sheets": "Manual Google Sheets data"
+  },
+
+  "mappings": [
+    {
+      "canonical_name": "LOUD",
+      "aliases": [
+        "LLL",
+        "Los Loud",
+        "LOUD Esports"
+      ],
+      "region": "BR",
+      "notes": "Brazilian team, LLL in Lolesports API"
+    },
+    {
+      "canonical_name": "Team Liquid",
+      "aliases": [
+        "TL",
+        "Liquid",
+        "Team Liquid LoL"
+      ],
+      "region": "NA",
+      "notes": "North American team"
+    },
+    {
+      "canonical_name": "T1",
+      "aliases": [
+        "SK Telecom T1",
+        "SKT",
+        "SKT T1",
+        "T1 LoL"
+      ],
+      "region": "KR",
+      "notes": "Korean team, formerly SK Telecom T1"
+    },
+    {
+      "canonical_name": "Gen.G",
+      "aliases": [
+        "GenG",
+        "Gen.G Esports",
+        "KSV",
+        "Samsung Galaxy"
+      ],
+      "region": "KR",
+      "notes": "Korean team, formerly Samsung Galaxy, then KSV"
+    },
+    {
+      "canonical_name": "G2 Esports",
+      "aliases": [
+        "G2",
+        "G2 LoL"
+      ],
+      "region": "EU",
+      "notes": "European team"
+    },
+    {
+      "canonical_name": "Fnatic",
+      "aliases": [
+        "FNC",
+        "Fnatic LoL"
+      ],
+      "region": "EU",
+      "notes": "European team"
+    },
+    {
+      "canonical_name": "Cloud9",
+      "aliases": [
+        "C9",
+        "Cloud 9",
+        "C9 LoL"
+      ],
+      "region": "NA",
+      "notes": "North American team"
+    },
+    {
+      "canonical_name": "TSM",
+      "aliases": [
+        "Team SoloMid",
+        "TSM LoL"
+      ],
+      "region": "NA",
+      "notes": "North American team"
+    },
+    {
+      "canonical_name": "JD Gaming",
+      "aliases": [
+        "JDG",
+        "JD",
+        "JDG LoL"
+      ],
+      "region": "CN",
+      "notes": "Chinese team"
+    },
+    {
+      "canonical_name": "Bilibili Gaming",
+      "aliases": [
+        "BLG",
+        "BiliGaming",
+        "BLG LoL"
+      ],
+      "region": "CN",
+      "notes": "Chinese team"
+    },
+    {
+      "canonical_name": "Rogue",
+      "aliases": [
+        "RGE",
+        "Rogue (European Team)"
+      ],
+      "region": "EU",
+      "notes": "European team"
+    },
+    {
+      "canonical_name": "MAD Lions",
+      "aliases": [
+        "MAD",
+        "MAD Lions KOI",
+        "MAD Lions Madrid"
+      ],
+      "region": "EU",
+      "notes": "European team, merged with KOI"
+    },
+    {
+      "canonical_name": "DRX",
+      "aliases": [
+        "DragonX",
+        "Dragon X"
+      ],
+      "region": "KR",
+      "notes": "Korean team"
+    },
+    {
+      "canonical_name": "KT Rolster",
+      "aliases": [
+        "KT",
+        "kt Rolster",
+        "KT LoL"
+      ],
+      "region": "KR",
+      "notes": "Korean team"
+    },
+    {
+      "canonical_name": "Hanwha Life Esports",
+      "aliases": [
+        "HLE",
+        "Hanwha",
+        "HLE LoL"
+      ],
+      "region": "KR",
+      "notes": "Korean team"
+    },
+    {
+      "canonical_name": "Top Esports",
+      "aliases": [
+        "TES",
+        "TOP",
+        "Top LoL"
+      ],
+      "region": "CN",
+      "notes": "Chinese team"
+    },
+    {
+      "canonical_name": "Royal Never Give Up",
+      "aliases": [
+        "RNG",
+        "Royal",
+        "RNG LoL"
+      ],
+      "region": "CN",
+      "notes": "Chinese team"
+    },
+    {
+      "canonical_name": "EDward Gaming",
+      "aliases": [
+        "EDG",
+        "Edward Gaming",
+        "EDG LoL"
+      ],
+      "region": "CN",
+      "notes": "Chinese team"
+    },
+    {
+      "canonical_name": "100 Thieves",
+      "aliases": [
+        "100T",
+        "100",
+        "Hundred Thieves"
+      ],
+      "region": "NA",
+      "notes": "North American team"
+    },
+    {
+      "canonical_name": "FlyQuest",
+      "aliases": [
+        "FLY",
+        "FlyQ"
+      ],
+      "region": "NA",
+      "notes": "North American team"
+    },
+    {
+      "canonical_name": "Counter Logic Gaming EU",
+      "aliases": [
+        "CLG EU",
+        "CLG.EU",
+        "Counter Logic Gaming Europe",
+        "CLG Europe"
+      ],
+      "region": "EU",
+      "notes": "Historical EU team (Season 2-3), different from NA CLG"
+    },
+    {
+      "canonical_name": "ahq e-Sports Club",
+      "aliases": [
+        "ahq",
+        "AHQ",
+        "Chinese Taipei National Team",
+        "Taiwan Nationals"
+      ],
+      "region": "TW",
+      "notes": "Taiwanese team, represented Taiwan in international events"
+    },
+    {
+      "canonical_name": "CTBC Flying Oyster",
+      "aliases": [
+        "FO",
+        "Flying Oyster",
+        "CTBC FO"
+      ],
+      "region": "TW",
+      "notes": "Taiwanese PCS team"
+    },
+    {
+      "canonical_name": "Anarchy",
+      "aliases": [
+        "AC",
+        "Anarchy Gaming"
+      ],
+      "region": "BR",
+      "notes": "Brazilian team"
+    },
+    {
+      "canonical_name": "DYG",
+      "aliases": [
+        "DYU Chinese Team",
+        "Daya Gaming"
+      ],
+      "region": "CN",
+      "notes": "Chinese team"
+    }
+  ],
+
+  "fuzzy_matching_rules": {
+    "enabled": true,
+    "similarity_threshold": 0.85,
+    "ignore_case": true,
+    "remove_suffixes": ["LoL", "Esports", "Gaming", "E-Sports"],
+    "normalize_spaces": true
+  },
+
+  "regional_hints": {
+    "LEC": "EU",
+    "LCS": "NA",
+    "LPL": "CN",
+    "LCK": "KR",
+    "CBLOL": "BR",
+    "PCS": "TW",
+    "VCS": "VN",
+    "LJL": "JP"
+  }
+}

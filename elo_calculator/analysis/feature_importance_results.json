@@ -1,0 +1,47 @@
+[
+  {
+    "config": "Baseline",
+    "description": "Base ELO, K=20",
+    "train_accuracy": 67.10700132100396,
+    "test_accuracy": 69.84615384615384,
+    "overfitting": -2.7391525251498763,
+    "train_samples": 757,
+    "test_samples": 325
+  },
+  {
+    "config": "Optimized K",
+    "description": "Base ELO, K=24 (optimized)",
+    "train_accuracy": 67.10700132100396,
+    "test_accuracy": 69.53846153846153,
+    "overfitting": -2.4314602174575697,
+    "train_samples": 757,
+    "test_samples": 325
+  },
+  {
+    "config": "K24 + Scale",
+    "description": "K=24 + Scale Factors",
+    "train_accuracy": 69.22060766182298,
+    "test_accuracy": 70.46153846153847,
+    "overfitting": -1.2409307997154855,
+    "train_samples": 757,
+    "test_samples": 325
+  },
+  {
+    "config": "K24 + Scale + Offsets",
+    "description": "K=24 + Scale + Regional Offsets",
+    "train_accuracy": 69.22060766182298,
+    "test_accuracy": 70.46153846153847,
+    "overfitting": -1.2409307997154855,
+    "train_samples": 757,
+    "test_samples": 325
+  },
+  {
+    "config": "K24 + Scale + Offsets + Context",
+    "description": "Full system + Tournament Context",
+    "train_accuracy": 69.22060766182298,
+    "test_accuracy": 70.46153846153847,
+    "overfitting": -1.2409307997154855,
+    "train_samples": 757,
+    "test_samples": 325
+  }
+]

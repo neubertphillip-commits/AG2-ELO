@@ -4,3 +4,10 @@ __pycache__/
 .venv/
 dist/
 *.egg-info/
+
+# AG2 agent workdir (generated code artifacts)
+agents/workdir/
+
+# Replit
+.cache/
+.upm/

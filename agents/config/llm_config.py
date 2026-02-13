@@ -1,36 +1,36 @@
 """
 LLM Configuration for AG2 Agent System.
-Supports xAI Grok via OpenAI-compatible API.
+Supports Groq (GroqCloud) via OpenAI-compatible API.
 Reads API keys from environment variables (Replit Secrets).
 """
 
 import os
 from typing import Any
 
-XAI_BASE_URL = "https://api.x.ai/v1"
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
 
 def get_llm_config() -> dict[str, Any]:
     """Build LLM config from environment variables.
 
     Replit Secrets should contain:
-        XAI_API_KEY      - xAI/Grok API key (required)
-        AG2_MODEL        - model name override (optional, default: grok-3-mini-fast)
+        GROQ_API_KEY     - Groq API key (required, starts with gsk_)
+        AG2_MODEL        - model name override (optional, default: llama-3.3-70b-versatile)
     """
-    api_key = os.environ.get("XAI_API_KEY", "")
-    model = os.environ.get("AG2_MODEL", "grok-3-mini-fast")
+    api_key = os.environ.get("GROQ_API_KEY", "")
+    model = os.environ.get("AG2_MODEL", "llama-3.3-70b-versatile")
 
     if not api_key:
         raise EnvironmentError(
-            "XAI_API_KEY not set. Add it to Replit Secrets "
-            "(Tools > Secrets > XAI_API_KEY)."
+            "GROQ_API_KEY not set. Add it to Replit Secrets "
+            "(Tools > Secrets > GROQ_API_KEY)."
         )
 
     config_list = [
         {
             "model": model,
             "api_key": api_key,
-            "base_url": XAI_BASE_URL,
+            "base_url": GROQ_BASE_URL,
         }
     ]
 
@@ -44,17 +44,17 @@ def get_llm_config() -> dict[str, Any]:
 
 def get_captain_llm_config() -> dict[str, Any]:
     """Higher-capability model config for CaptainAgent orchestration."""
-    api_key = os.environ.get("XAI_API_KEY", "")
-    captain_model = os.environ.get("AG2_CAPTAIN_MODEL", "grok-3-fast")
+    api_key = os.environ.get("GROQ_API_KEY", "")
+    captain_model = os.environ.get("AG2_CAPTAIN_MODEL", "llama-3.3-70b-versatile")
 
     if not api_key:
-        raise EnvironmentError("XAI_API_KEY not set.")
+        raise EnvironmentError("GROQ_API_KEY not set.")
 
     config_list = [
         {
             "model": captain_model,
             "api_key": api_key,
-            "base_url": XAI_BASE_URL,
+            "base_url": GROQ_BASE_URL,
         }
     ]
 

@@ -34,12 +34,12 @@ with st.sidebar:
     st.header("System Status")
 
     # API key check
-    api_key = os.environ.get("XAI_API_KEY", "")
+    api_key = os.environ.get("GROQ_API_KEY", "")
     if api_key:
-        st.success("xAI/Grok API Key: configured")
+        st.success("Groq API Key: configured")
     else:
-        st.error("xAI/Grok API Key: MISSING")
-        st.caption("Add via Replit Secrets (Tools > Secrets > XAI_API_KEY)")
+        st.error("Groq API Key: MISSING")
+        st.caption("Add via Replit Secrets (Tools > Secrets > GROQ_API_KEY)")
 
     # AG2 check
     try:
@@ -114,7 +114,7 @@ with qcol4:
 # ── Execute Task ──────────────────────────────────────────────────
 if st.button("🚀 Run Task", type="primary", disabled=not task):
     if not api_key:
-        st.error("Cannot run: XAI_API_KEY not configured.")
+        st.error("Cannot run: GROQ_API_KEY not configured.")
     else:
         with st.spinner("Agents are working..."):
             # Capture stdout to show agent conversation

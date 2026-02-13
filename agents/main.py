@@ -38,10 +38,10 @@ def check_environment():
     errors = []
 
     # Check API key
-    if not os.environ.get("OPENAI_API_KEY"):
+    if not os.environ.get("XAI_API_KEY"):
         errors.append(
-            "OPENAI_API_KEY not set. Add it to Replit Secrets "
-            "(Tools > Secrets > OPENAI_API_KEY)"
+            "XAI_API_KEY not set. Add it to Replit Secrets "
+            "(Tools > Secrets > XAI_API_KEY)"
         )
 
     # Check AG2 installation

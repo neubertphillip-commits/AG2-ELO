@@ -15,10 +15,10 @@ def get_llm_config() -> dict[str, Any]:
 
     Replit Secrets should contain:
         XAI_API_KEY      - xAI/Grok API key (required)
-        AG2_MODEL        - model name override (optional, default: grok-2)
+        AG2_MODEL        - model name override (optional, default: grok-3-mini-fast)
     """
     api_key = os.environ.get("XAI_API_KEY", "")
-    model = os.environ.get("AG2_MODEL", "grok-2")
+    model = os.environ.get("AG2_MODEL", "grok-3-mini-fast")
 
     if not api_key:
         raise EnvironmentError(
@@ -45,7 +45,7 @@ def get_llm_config() -> dict[str, Any]:
 def get_captain_llm_config() -> dict[str, Any]:
     """Higher-capability model config for CaptainAgent orchestration."""
     api_key = os.environ.get("XAI_API_KEY", "")
-    captain_model = os.environ.get("AG2_CAPTAIN_MODEL", "grok-2")
+    captain_model = os.environ.get("AG2_CAPTAIN_MODEL", "grok-3-fast")
 
     if not api_key:
         raise EnvironmentError("XAI_API_KEY not set.")

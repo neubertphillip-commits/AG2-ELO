@@ -1,0 +1,52 @@
+"""
+Career-AV und Weighted Career AV (PFR-Definition):
+
+100% der besten Saison + 95% der zweitbesten + 90% der drittbesten + ...
+
+Zusaetzlich (auf Wunsch): Weighted-Career-AV geteilt durch die Anzahl der
+tatsaechlich eingerechneten Saisons (die, deren Gewicht > 0 ist) - ein fairer
+Pro-Saison-Schnitt, der lange Karrieren nicht automatisch bevorzugt.
+"""
+
+from __future__ import annotations
+
+import pandas as pd
+
+from .config import AVConfig
+
+
+def weighted_career_av(cfg: AVConfig, multi_season_av: pd.DataFrame) -> pd.DataFrame:
+    if multi_season_av.empty:
+        return pd.DataFrame(columns=[
+            "player_id", "player_name", "career_av", "weighted_career_av",
+            "seasons_played", "seasons_counted", "weighted_av_per_season",
+        ])
+
+    per_player_season = multi_season_av.groupby(["player_id", "player_name", "season"], as_index=False)["av"].sum()
+
+    rows = []
+    for (pid, name), g in per_player_season.groupby(["player_id", "player_name"]):
+        seasons_sorted = g.sort_values("av", ascending=False)["av"].tolist()
+        career_av = sum(seasons_sorted)
+
+        weighted_total = 0.0
+        seasons_counted = 0
+        for i, av in enumerate(seasons_sorted[: cfg.weighted_career_max_seasons]):
+            weight = cfg.weighted_career_weight_start - cfg.weighted_career_weight_step * i
+            if weight <= 0:
+                break
+            weighted_total += weight * av
+            seasons_counted += 1
+
+        rows.append({
+            "player_id": pid,
+            "player_name": name,
+            "career_av": career_av,
+            "weighted_career_av": weighted_total,
+            "seasons_played": len(seasons_sorted),
+            "seasons_counted": seasons_counted,
+            "weighted_av_per_season": weighted_total / seasons_counted if seasons_counted else 0.0,
+        })
+
+    out = pd.DataFrame(rows)
+    return out.sort_values("weighted_career_av", ascending=False).reset_index(drop=True)

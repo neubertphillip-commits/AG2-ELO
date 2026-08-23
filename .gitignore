@@ -92,3 +92,6 @@ agents/workdir/
 # Replit
 .cache/
 .upm/
+
+# NFL AV Tracker: lokaler Datencache (nflverse-Downloads)
+nfl_av_tracker/data_cache/*.parquet

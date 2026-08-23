@@ -28,10 +28,18 @@ def weighted_career_av(cfg: AVConfig, multi_season_av: pd.DataFrame) -> pd.DataF
             "seasons_played", "seasons_counted", "weighted_av_per_season",
         ])
 
-    per_player_season = multi_season_av.groupby(["player_id", "player_name", "season"], as_index=False)["av"].sum()
+    # player_id ist der eindeutige Schluessel - NICHT player_name mit
+    # einbeziehen: derselbe Spieler kann in verschiedenen Saisons (oder auch
+    # innerhalb combine_season_av) mit leicht unterschiedlicher Namens-
+    # schreibweise auftauchen, sonst wuerde er in zwei "Karrieren" gesplittet.
+    names = multi_season_av.sort_values(
+        "player_name", key=lambda s: s.str.len(), ascending=False
+    ).groupby("player_id")["player_name"].first()
+    per_player_season = multi_season_av.groupby(["player_id", "season"], as_index=False)["av"].sum()
 
     rows = []
-    for (pid, name), g in per_player_season.groupby(["player_id", "player_name"]):
+    for pid, g in per_player_season.groupby("player_id"):
+        name = names[pid]
         seasons_sorted = g.sort_values("av", ascending=False)["av"].tolist()
         career_av = sum(seasons_sorted)
 

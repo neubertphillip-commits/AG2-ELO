@@ -1,6 +1,12 @@
 """
 Verbindet data_source (Rohdaten) -> aggregate (Boxscore-Tabellen) ->
 av_engine (PFR-Formeln) zu einer einzigen Funktion pro Saison/Wochenstand.
+
+Fuer abgeschlossene Saisons (through_week=None UND die Saison ist laut
+Spielplan fertig) wird das Ergebnis in der SQLite-DB gecached (siehe db.py):
+gleiche Config -> reiner DB-Read statt Neuberechnung. Fuer die laufende
+Saison oder einen expliziten Wochenstand (through_week gesetzt) wird immer
+frisch gerechnet, weil sich diese Werte per Definition noch aendern.
 """
 
 from __future__ import annotations
@@ -12,23 +18,20 @@ import pandas as pd
 from . import aggregate as agg
 from . import av_engine as eng
 from . import data_source as ds
+from . import db
 from .config import AVConfig
 
 
 @lru_cache(maxsize=1)
 def _id_crosswalk() -> dict[str, str]:
-    import nfl_data_py as nfl
-
-    ids = nfl.import_ids()
+    ids = db.load_ids()
     ids = ids.dropna(subset=["pfr_id", "gsis_id"])
     return dict(zip(ids["pfr_id"], ids["gsis_id"]))
 
 
 @lru_cache(maxsize=1)
 def _roster_positions_all() -> dict[str, str]:
-    import nfl_data_py as nfl
-
-    ids = nfl.import_ids()
+    ids = db.load_ids()
     ids = ids.dropna(subset=["gsis_id", "position"])
     return dict(zip(ids["gsis_id"], ids["position"]))
 
@@ -39,9 +42,10 @@ def _position_refinement(season: int) -> dict[str, str]:
     return agg.build_position_refinement(rosters)
 
 
-def build_season_av(cfg: AVConfig, season: int, through_week: int | None = None,
-                     all_pro: dict | None = None) -> pd.DataFrame:
-    """Vollstaendige AV-Rangliste fuer eine Saison (optional bis inkl. through_week)."""
+def _compute_season_av(cfg: AVConfig, season: int, through_week: int | None,
+                        all_pro: dict | None) -> pd.DataFrame:
+    """Rechnet die AV-Formeln fuer eine Saison/einen Wochenstand tatsaechlich
+    durch (keine Cache-Logik hier - siehe build_season_av)."""
     pbp = ds.get_pbp_data([season])
     snaps = ds.get_snap_counts([season])
     schedules = ds.get_schedules([season])
@@ -83,6 +87,36 @@ def build_season_av(cfg: AVConfig, season: int, through_week: int | None = None,
     return eng.combine_season_av(oline_av, skill_av, defense_av, kicker_av, punter_av, return_av)
 
 
+def build_season_av(cfg: AVConfig, season: int, through_week: int | None = None,
+                     all_pro: dict | None = None, force_recompute: bool = False) -> pd.DataFrame:
+    """Vollstaendige AV-Rangliste fuer eine Saison (optional bis inkl. through_week).
+
+    Abgeschlossene Saisons (through_week=None, Spielplan komplett) werden
+    unter dem aktuellen Config-Hash aus der DB gelesen, falls schon einmal
+    berechnet - sonst berechnet und fuer naechste Male gespeichert. Ein
+    Wochenstand (through_week gesetzt) wird nie gecached, da er sich noch
+    aendert.
+    """
+    use_cache = through_week is None and all_pro is None and not force_recompute
+    chash = db.config_hash(cfg) if use_cache else None
+
+    if use_cache:
+        schedules = ds.get_schedules([season])
+        if db.is_season_final(schedules, season):
+            cached = db.get_cached_av(chash, season)
+            if cached is not None:
+                return cached
+
+    result = _compute_season_av(cfg, season, through_week, all_pro)
+
+    if use_cache:
+        schedules = ds.get_schedules([season])
+        if db.is_season_final(schedules, season):
+            db.store_av(chash, season, result)
+
+    return result
+
+
 def build_multi_season_av(cfg: AVConfig, seasons: list[int]) -> pd.DataFrame:
     """AV je Spieler UND Saison, fuer Career-/Weighted-Career-Berechnungen."""
     frames = []
@@ -93,3 +127,23 @@ def build_multi_season_av(cfg: AVConfig, seasons: list[int]) -> pd.DataFrame:
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(
         columns=["player_id", "player_name", "team", "av", "season"]
     )
+
+
+def warm_historical_cache(cfg: AVConfig, seasons: list[int], force: bool = False) -> pd.DataFrame:
+    """Rechnet & speichert AV fuer mehrere vergangene Saisons in einem Rutsch
+    (fuer den 'einmal alles laden'-Anwendungsfall). Ueberspringt Saisons, die
+    unter diesem Config-Hash schon gecached sind, ausser force=True."""
+    chash = db.config_hash(cfg)
+    rows = []
+    for s in seasons:
+        schedules = ds.get_schedules([s])
+        if not db.is_season_final(schedules, s):
+            rows.append({"season": s, "status": "uebersprungen (noch nicht abgeschlossen)"})
+            continue
+        if not force and db.get_cached_av(chash, s) is not None:
+            rows.append({"season": s, "status": "bereits gecached"})
+            continue
+        result = _compute_season_av(cfg, s, None, None)
+        db.store_av(chash, s, result)
+        rows.append({"season": s, "status": f"berechnet ({len(result)} Spieler)"})
+    return pd.DataFrame(rows)

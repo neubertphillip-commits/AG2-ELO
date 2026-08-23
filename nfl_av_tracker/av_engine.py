@@ -289,6 +289,17 @@ def compute_return_av(cfg: AVConfig, returns: pd.DataFrame) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 def combine_season_av(*component_tables: pd.DataFrame) -> pd.DataFrame:
+    """player_id + team ist der eindeutige Schluessel - NICHT player_name
+    mit einbeziehen: pbp liefert fuer dieselbe Person je nach Play-Typ-Spalte
+    (rusher_player_name vs. receiver_player_name etc.) manchmal leicht
+    unterschiedlich abgekuerzte Namen (z.B. 'T.Dell' vs. 'N.Dell'), was sonst
+    faelschlich zwei Zeilen fuer denselben Spieler erzeugen wuerde."""
     all_rows = pd.concat([t for t in component_tables if not t.empty], ignore_index=True)
-    totals = all_rows.groupby(["player_id", "player_name", "team"], as_index=False)["av"].sum()
+    all_rows = all_rows.sort_values(
+        "player_name", key=lambda s: s.str.len(), ascending=False
+    )
+    names = all_rows.groupby(["player_id", "team"])["player_name"].first()
+    totals = all_rows.groupby(["player_id", "team"], as_index=False)["av"].sum()
+    totals["player_name"] = totals.apply(lambda r: names[(r.player_id, r.team)], axis=1)
+    totals = totals[["player_id", "player_name", "team", "av"]]
     return totals.sort_values("av", ascending=False).reset_index(drop=True)

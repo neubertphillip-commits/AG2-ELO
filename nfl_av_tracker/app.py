@@ -11,9 +11,9 @@ import dataclasses
 import pandas as pd
 import streamlit as st
 
-from nfl_av_tracker import AVConfig
+from nfl_av_tracker import AVConfig, db
 from nfl_av_tracker.career import weighted_career_av
-from nfl_av_tracker.pipeline import build_multi_season_av, build_season_av
+from nfl_av_tracker.pipeline import build_multi_season_av, build_season_av, warm_historical_cache
 from nfl_av_tracker.projection import build_projected_season_av
 
 st.set_page_config(page_title="NFL Approximate Value Tracker", page_icon="🏈", layout="wide")
@@ -111,6 +111,38 @@ def _config_sidebar() -> AVConfig:
     return new_cfg
 
 
+def _database_sidebar(cfg: AVConfig) -> None:
+    st.sidebar.header("🗄️ Datenbank-Cache")
+    st.sidebar.caption(
+        "Rohdaten & berechnete AV-Werte liegen dauerhaft in einer lokalen "
+        "SQLite-DB. Eine abgeschlossene Saison wird unter der aktuellen "
+        "Variablen-Konfiguration nur einmal gerechnet."
+    )
+    with st.sidebar.expander("Vergangene Saisons vorladen"):
+        col1, col2 = st.columns(2)
+        with col1:
+            start = st.number_input("Von", min_value=FIRST_AVAILABLE_SEASON, max_value=CURRENT_SEASON, value=CURRENT_SEASON - 9, step=1, key="warm_start")
+        with col2:
+            end = st.number_input("Bis", min_value=FIRST_AVAILABLE_SEASON, max_value=CURRENT_SEASON, value=CURRENT_SEASON, step=1, key="warm_end")
+        force = st.checkbox("Neu berechnen, auch wenn schon gecached", value=False)
+        if st.button("▶ Jetzt vorladen"):
+            seasons = list(range(int(start), int(end) + 1))
+            with st.spinner(f"Lade & berechne {len(seasons)} Saison(en) ..."):
+                result = warm_historical_cache(cfg, seasons, force=force)
+            st.dataframe(result, use_container_width=True, hide_index=True)
+
+        status = db.cache_status(list(range(int(start), int(end) + 1)))
+        st.dataframe(
+            status.rename(columns={"season": "Saison", "raw_data_cached": "Rohdaten da", "any_av_cached": "AV gecached"}),
+            use_container_width=True, hide_index=True, height=200,
+        )
+
+    if st.sidebar.button("🗑️ Kompletten Cache loeschen"):
+        db.clear_all()
+        st.cache_data.clear()
+        st.sidebar.success("Cache geleert.")
+
+
 def _leaderboard_tab(cfg: AVConfig):
     st.subheader("Saison-Rangliste")
     col1, col2 = st.columns([1, 3])
@@ -185,6 +217,7 @@ def main():
     )
 
     cfg = _config_sidebar()
+    _database_sidebar(cfg)
 
     tab1, tab2, tab3 = st.tabs(["📊 Saison-Rangliste", "🏆 Career / Weighted Career", "🔴 Laufende Saison"])
     with tab1:
@@ -199,10 +232,13 @@ def main():
             "- **Games Started** wird ueber einen Snap-%-Schwellenwert approximiert "
             "(PFRs eigentliche Start-Flags sind ueber freie APIs nicht verfuegbar).\n"
             "- **All-Pro-/Pro-Bowl-Bonus** ist standardmaessig deaktiviert, da es dafuer "
-            "keine zuverlaessige freie Datenquelle gibt.\n"
+            "keine zuverlaessige freie, aktuelle Datenquelle gibt (nur echte Wahlen, keine "
+            "Alternates - siehe README).\n"
             "- **Tackles** werden aus Play-by-Play-Zuordnungen (solo/assist) aggregiert, "
             "nicht aus offiziellen Team-Stats - kann von PFRs Zahlen abweichen.\n"
-            "- Historische Datenverfuegbarkeit (nflverse PBP) beginnt 1999, nicht 1960."
+            "- Historische Datenverfuegbarkeit (nflverse PBP) beginnt 1999, nicht 1960.\n"
+            "- Abgeschlossene Saisons werden je Variablen-Konfiguration einmalig berechnet "
+            "und in einer lokalen SQLite-DB gecached (siehe Sidebar 'Datenbank-Cache')."
         )
 
 

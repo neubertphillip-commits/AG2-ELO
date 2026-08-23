@@ -89,7 +89,6 @@ def _config_sidebar() -> AVConfig:
         updates["tackle_constant_dl"] = st.number_input("Tackle-Konstante DL", value=cfg.tackle_constant_dl)
         updates["tackle_constant_lb"] = st.number_input("Tackle-Konstante LB", value=cfg.tackle_constant_lb)
         updates["tackle_constant_db"] = st.number_input("Tackle-Konstante DB", value=cfg.tackle_constant_db)
-        updates["assist_tackle_weight"] = st.number_input("Gewicht Assist-Tackle (rel. zu Solo=1.0)", value=cfg.assist_tackle_weight)
 
     with st.sidebar.expander("Special Teams"):
         updates["return_td_av"] = st.number_input("AV pro Return-TD", value=cfg.return_td_av)

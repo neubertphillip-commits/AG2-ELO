@@ -13,8 +13,16 @@ import pandas as pd
 from . import db
 
 
-def get_pbp_data(seasons: list[int]) -> pd.DataFrame:
-    return db.load_pbp(seasons)
+def get_pbp_special(seasons: list[int]) -> pd.DataFrame:
+    return db.load_pbp_special(seasons)
+
+
+def get_weekly_data(seasons: list[int]) -> pd.DataFrame:
+    return db.load_weekly_data(seasons)
+
+
+def get_weekly_def(seasons: list[int]) -> pd.DataFrame:
+    return db.load_weekly_def(seasons)
 
 
 def get_snap_counts(seasons: list[int]) -> pd.DataFrame:

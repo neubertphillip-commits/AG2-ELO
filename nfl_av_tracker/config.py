@@ -82,7 +82,6 @@ class AVConfig:
     #      verfuegbar sind (siehe README fuer Details) -------------------
     games_started_snap_threshold: float = 0.5  # Snap-% als "Start"-Proxy
     enable_all_pro_bonus: bool = False  # mangels freier Quelle standardmaessig aus
-    assist_tackle_weight: float = 0.5   # Solo=1.0, Assist=diese Gewichtung
 
     # ---- Weighted Career AV --------------------------------------------
     weighted_career_weight_start: float = 1.0

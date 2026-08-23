@@ -28,49 +28,73 @@ def _filter_week(df: pd.DataFrame, season: int, through_week: int | None) -> pd.
 
 # ---------------------------------------------------------------------------
 # Team-Pools (Offense/Defense-Punkte pro Drive, PFR-Definition)
+#
+# TD-/Turnover-Zaehler kommen aus der Box-Score-Tabelle 'weekly' (ein Play-
+# Level-Datensatz ist dafuer nicht noetig). FG-/Punt-Zaehler kommen aus
+# 'pbp_special' (der stark gefilterten PBP-Restmenge, siehe db.py) - fuer
+# FG-/XP-/Punt-Versuche gibt es keine fertige Box-Score-Tabelle bei nflverse.
 # ---------------------------------------------------------------------------
 
-def team_offense_inputs(pbp: pd.DataFrame, season: int, through_week: int | None = None) -> pd.DataFrame:
-    """Team-level Zaehler fuer offense-points-per-drive, gruppiert nach posteam."""
-    df = _filter_week(pbp, season, through_week).copy()
-    df = df[df["posteam"].notna()]
-    df["_fg_made"] = (df["field_goal_result"] == "made").astype(int)
-
-    g = df.groupby("posteam")
-    out = pd.DataFrame({
-        "rush_td": g["rush_touchdown"].sum(),
-        "pass_td": g["pass_touchdown"].sum(),
-        "fg_made": g["_fg_made"].sum(),
-        "fga": g["field_goal_attempt"].sum(),
-        "punts": g["punt_attempt"].sum(),
-        "interceptions_thrown": g["interception"].sum(),
-        "fumbles_lost": g["fumble_lost"].sum(),
+def team_offense_inputs(weekly: pd.DataFrame, pbp_special: pd.DataFrame, season: int,
+                         through_week: int | None = None) -> pd.DataFrame:
+    """Team-level Zaehler fuer offense-points-per-drive."""
+    w = _filter_week(weekly, season, through_week)
+    g = w.groupby("recent_team")
+    td_turnover = pd.DataFrame({
+        "rush_td": g["rushing_tds"].sum(),
+        "pass_td": g["passing_tds"].sum(),
+        "interceptions_thrown": g["interceptions"].sum(),
+        "fumbles_lost": (g["rushing_fumbles_lost"].sum() + g["receiving_fumbles_lost"].sum()
+                          + g["sack_fumbles_lost"].sum()),
     }).fillna(0)
+    td_turnover.index.name = "team"
+
+    p = _filter_week(pbp_special, season, through_week).copy()
+    p = p[p["posteam"].notna()]
+    p["_fg_made"] = (p["field_goal_result"] == "made").astype(int)
+    pg = p.groupby("posteam")
+    fg_punt = pd.DataFrame({
+        "fg_made": pg["_fg_made"].sum(),
+        "fga": pg["field_goal_attempt"].sum(),
+        "punts": pg["punt_attempt"].sum(),
+    }).fillna(0)
+    fg_punt.index.name = "team"
+
+    out = td_turnover.join(fg_punt, how="outer").fillna(0).reset_index()
     out["turnovers"] = out["interceptions_thrown"] + out["fumbles_lost"]
-    out.index.name = "team"
-    return out.reset_index()
+    return out
 
 
-def team_defense_inputs(pbp: pd.DataFrame, season: int, through_week: int | None = None) -> pd.DataFrame:
-    """Dieselben Zaehler, aber aus Sicht der Defense (was das Team zulaesst),
-    gruppiert nach defteam."""
-    df = _filter_week(pbp, season, through_week).copy()
-    df = df[df["defteam"].notna()]
-    df["_fg_made"] = (df["field_goal_result"] == "made").astype(int)
-
-    g = df.groupby("defteam")
-    out = pd.DataFrame({
-        "rush_td_allowed": g["rush_touchdown"].sum(),
-        "pass_td_allowed": g["pass_touchdown"].sum(),
-        "fg_allowed": g["_fg_made"].sum(),
-        "fga_faced": g["field_goal_attempt"].sum(),
-        "punts_forced": g["punt_attempt"].sum(),
-        "interceptions_forced": g["interception"].sum(),
-        "fumbles_forced_lost": g["fumble_lost"].sum(),
+def team_defense_inputs(weekly: pd.DataFrame, pbp_special: pd.DataFrame, season: int,
+                         through_week: int | None = None) -> pd.DataFrame:
+    """Dieselben Zaehler aus Sicht der Defense (was das Team zulaesst): TDs/
+    Turnover ueber die Offense-Produktion des jeweiligen Gegners (weekly's
+    'opponent_team'), FG/Punt direkt aus pbp_special (hat 'defteam')."""
+    w = _filter_week(weekly, season, through_week)
+    g = w.groupby("opponent_team")
+    td_turnover = pd.DataFrame({
+        "rush_td_allowed": g["rushing_tds"].sum(),
+        "pass_td_allowed": g["passing_tds"].sum(),
+        "interceptions_forced": g["interceptions"].sum(),
+        "fumbles_forced_lost": (g["rushing_fumbles_lost"].sum() + g["receiving_fumbles_lost"].sum()
+                                 + g["sack_fumbles_lost"].sum()),
     }).fillna(0)
+    td_turnover.index.name = "team"
+
+    p = _filter_week(pbp_special, season, through_week).copy()
+    p = p[p["defteam"].notna()]
+    p["_fg_made"] = (p["field_goal_result"] == "made").astype(int)
+    pg = p.groupby("defteam")
+    fg_punt = pd.DataFrame({
+        "fg_allowed": pg["_fg_made"].sum(),
+        "fga_faced": pg["field_goal_attempt"].sum(),
+        "punts_forced": pg["punt_attempt"].sum(),
+    }).fillna(0)
+    fg_punt.index.name = "team"
+
+    out = td_turnover.join(fg_punt, how="outer").fillna(0).reset_index()
     out["turnovers_forced"] = out["interceptions_forced"] + out["fumbles_forced_lost"]
-    out.index.name = "team"
-    return out.reset_index()
+    return out
 
 
 def points_per_drive(rush_td, pass_td, fg_made, turnovers, punts, fga) -> float:
@@ -151,39 +175,36 @@ def games_played_started(
 # Offense: Rusher / Passer / Receiver
 # ---------------------------------------------------------------------------
 
-def player_offense_stats(pbp: pd.DataFrame, season: int, through_week: int | None = None) -> dict[str, pd.DataFrame]:
-    df = _filter_week(pbp, season, through_week)
+def player_offense_stats(weekly: pd.DataFrame, season: int, through_week: int | None = None) -> dict[str, pd.DataFrame]:
+    """Aus der Box-Score-Tabelle 'weekly' (import_weekly_data) - kein
+    Play-Level-Datensatz noetig, die Yards/TDs/Attempts sind dort schon
+    pro Spieler und Woche aggregiert."""
+    df = _filter_week(weekly, season, through_week)
 
-    rush = df[df["rush_attempt"] == 1].dropna(subset=["rusher_player_id"])
-    rushers = rush.groupby(["rusher_player_id", "rusher_player_name", "posteam"]).agg(
-        carries=("rush_attempt", "sum"),
+    rush = df[df["carries"] > 0]
+    rushers = rush.groupby(["player_id", "player_name", "recent_team"]).agg(
+        carries=("carries", "sum"),
         rushing_yards=("rushing_yards", "sum"),
-    ).reset_index().rename(columns={
-        "rusher_player_id": "player_id", "rusher_player_name": "player_name", "posteam": "team",
-    })
+    ).reset_index().rename(columns={"recent_team": "team"})
 
-    passers = df[df["pass_attempt"] == 1].dropna(subset=["passer_player_id"])
-    passer_stats = passers.groupby(["passer_player_id", "passer_player_name", "posteam"]).agg(
-        attempts=("pass_attempt", "sum"),
+    pass_df = df[df["attempts"] > 0]
+    passer_stats = pass_df.groupby(["player_id", "player_name", "recent_team"]).agg(
+        attempts=("attempts", "sum"),
         passing_yards=("passing_yards", "sum"),
-        passing_tds=("pass_touchdown", "sum"),
-        interceptions=("interception", "sum"),
-    ).reset_index().rename(columns={
-        "passer_player_id": "player_id", "passer_player_name": "player_name", "posteam": "team",
-    })
+        passing_tds=("passing_tds", "sum"),
+        interceptions=("interceptions", "sum"),
+    ).reset_index().rename(columns={"recent_team": "team"})
     passer_stats["ay_a"] = (
         passer_stats["passing_yards"]
         + 20 * passer_stats["passing_tds"]
         - 45 * passer_stats["interceptions"]
     ) / passer_stats["attempts"].replace(0, pd.NA)
 
-    recv = df[df["complete_pass"] == 1].dropna(subset=["receiver_player_id"])
-    receivers = recv.groupby(["receiver_player_id", "receiver_player_name", "posteam"]).agg(
-        receptions=("complete_pass", "sum"),
+    recv = df[df["receptions"] > 0]
+    receivers = recv.groupby(["player_id", "player_name", "recent_team"]).agg(
+        receptions=("receptions", "sum"),
         receiving_yards=("receiving_yards", "sum"),
-    ).reset_index().rename(columns={
-        "receiver_player_id": "player_id", "receiver_player_name": "player_name", "posteam": "team",
-    })
+    ).reset_index().rename(columns={"recent_team": "team"})
 
     return {"rushers": rushers, "passers": passer_stats, "receivers": receivers}
 
@@ -208,28 +229,34 @@ def league_ay_a(passers: pd.DataFrame, min_attempts: int) -> float:
 # Defense (Front Seven / Secondary)
 # ---------------------------------------------------------------------------
 
-def player_defense_stats(pbp: pd.DataFrame, season: int, through_week: int | None = None) -> pd.DataFrame:
-    df = _filter_week(pbp, season, through_week)
+def player_defense_stats(weekly_def: pd.DataFrame, pbp_special: pd.DataFrame, season: int,
+                          pfr_to_gsis: dict[str, str],
+                          through_week: int | None = None) -> pd.DataFrame:
+    """Sacks/INTs/Tackles kommen aus der Box-Score-Tabelle 'weekly_def'
+    (import_weekly_pfr('def') - kombinierte Tackles, kein Solo/Assist-Split
+    mehr noetig). Fumble-Recoveries und Defensive-TDs stehen in keiner
+    Box-Score-Tabelle einzeln drin und kommen weiterhin aus der gefilterten
+    PBP-Restmenge (siehe db.py: nur TD-/Fumble-Recovery-Plays)."""
+    wd = _filter_week(weekly_def, season, through_week).copy()
+    wd["player_id"] = wd["pfr_player_id"].map(pfr_to_gsis)
+    wd = wd.dropna(subset=["player_id"])
+    base = wd.groupby(["player_id", "pfr_player_name", "team"]).agg(
+        sacks=("def_sacks", "sum"),
+        interceptions=("def_ints", "sum"),
+        tackles=("def_tackles_combined", "sum"),
+    ).reset_index().rename(columns={"pfr_player_name": "player_name"})
+
+    df = _filter_week(pbp_special, season, through_week)
     counts: dict[str, dict[str, float]] = {}
 
     def bump(pid, name, team, field, amount=1.0):
         if pd.isna(pid):
             return
-        rec = counts.setdefault(pid, {"player_name": name, "team": team, "sacks": 0.0,
-                                       "fumble_recoveries": 0.0, "interceptions": 0.0,
-                                       "defensive_tds": 0.0, "solo_tackles": 0.0,
-                                       "assist_tackles": 0.0})
+        rec = counts.setdefault(pid, {"player_name": name, "team": team,
+                                       "fumble_recoveries": 0.0, "defensive_tds": 0.0})
         rec[field] += amount
 
-    for _, r in df[df["sack"] == 1].iterrows():
-        bump(r.get("sack_player_id"), r.get("sack_player_name"), r.get("defteam"), "sacks", 1.0)
-        for i in (1, 2):
-            hid, hname = r.get(f"half_sack_{i}_player_id"), r.get(f"half_sack_{i}_player_name")
-            if pd.notna(hid):
-                bump(hid, hname, r.get("defteam"), "sacks", 0.5)
-
     for _, r in df[df["interception"] == 1].iterrows():
-        bump(r.get("interception_player_id"), r.get("interception_player_name"), r.get("defteam"), "interceptions", 1.0)
         if r.get("touchdown") == 1 and r.get("return_touchdown") == 1:
             bump(r.get("interception_player_id"), r.get("interception_player_name"), r.get("defteam"), "defensive_tds", 1.0)
 
@@ -242,21 +269,10 @@ def player_defense_stats(pbp: pd.DataFrame, season: int, through_week: int | Non
                 if r.get("touchdown") == 1 and r.get("return_touchdown") == 1:
                     bump(fid, fname, fteam, "defensive_tds", 1.0)
 
-    tkl = df[(df["solo_tackle"] == 1) | (df["tackle_with_assist"] == 1) | (df["assist_tackle"] == 1)]
-    for _, r in tkl.iterrows():
-        for i in (1, 2):
-            sid, sname = r.get(f"solo_tackle_{i}_player_id"), r.get(f"solo_tackle_{i}_player_name")
-            if pd.notna(sid):
-                bump(sid, sname, r.get("defteam"), "solo_tackles", 1.0)
-            twid, twname, twteam = r.get(f"tackle_with_assist_{i}_player_id"), r.get(f"tackle_with_assist_{i}_player_name"), r.get(f"tackle_with_assist_{i}_team")
-            if pd.notna(twid) and twteam == r.get("defteam"):
-                bump(twid, twname, twteam, "solo_tackles", 1.0)
-        for i in (1, 2, 3, 4):
-            aid, aname = r.get(f"assist_tackle_{i}_player_id"), r.get(f"assist_tackle_{i}_player_name")
-            if pd.notna(aid):
-                bump(aid, aname, r.get("defteam"), "assist_tackles", 1.0)  # Gewichtung erfolgt in av_engine (config.assist_tackle_weight)
+    extra = pd.DataFrame.from_dict(counts, orient="index").reset_index().rename(columns={"index": "player_id"})
 
-    out = pd.DataFrame.from_dict(counts, orient="index").reset_index().rename(columns={"index": "player_id"})
+    out = base.merge(extra[["player_id", "fumble_recoveries", "defensive_tds"]], on="player_id", how="left")
+    out[["fumble_recoveries", "defensive_tds"]] = out[["fumble_recoveries", "defensive_tds"]].fillna(0.0)
     return out
 
 

@@ -93,8 +93,8 @@ agents/workdir/
 .cache/
 .upm/
 
-# NFL AV Tracker: lokaler Datencache (nflverse-Downloads + SQLite-DB)
+# NFL AV Tracker: tracker.db (2018-2025 vorgeladen) ist bewusst committed,
+# nur WAL/SHM-Journaldateien und alte Parquet-Reste ausschliessen.
 nfl_av_tracker/data_cache/*.parquet
-nfl_av_tracker/data_cache/*.db
 nfl_av_tracker/data_cache/*.db-wal
 nfl_av_tracker/data_cache/*.db-shm

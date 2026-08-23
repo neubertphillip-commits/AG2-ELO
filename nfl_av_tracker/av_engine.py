@@ -161,7 +161,7 @@ def compute_defense_av(cfg: AVConfig, season: int, defense_games: pd.DataFrame, 
         return pd.DataFrame(columns=["player_id", "player_name", "team", "av", "component"])
 
     df = df.merge(defense_stats, on="player_id", how="left", suffixes=("", "_stat"))
-    for c in ["sacks", "fumble_recoveries", "interceptions", "defensive_tds", "solo_tackles", "assist_tackles"]:
+    for c in ["sacks", "fumble_recoveries", "interceptions", "defensive_tds", "tackles"]:
         df[c] = df[c].fillna(0.0)
 
     ap_level = {"1st": cfg.all_pro_level_1st, "2nd": cfg.all_pro_level_2nd, "pb": cfg.all_pro_level_pro_bowl}
@@ -177,13 +177,12 @@ def compute_defense_av(cfg: AVConfig, season: int, defense_games: pd.DataFrame, 
         return cfg.tackle_constant_db
 
     def indiv_points(row, team_games):
-        tackles = row.solo_tackles + cfg.assist_tackle_weight * row.assist_tackles
         base = (row.games_played + cfg.games_started_weight_defense * row.games_started
                 + cfg.sack_weight * row.sacks
                 + cfg.fumble_recovery_weight * row.fumble_recoveries
                 + cfg.interception_weight * row.interceptions
                 + cfg.defensive_td_weight * row.defensive_tds
-                + tkl_const(row.position) * tackles)
+                + tkl_const(row.position) * row.tackles)
         bonus = 0.0
         if cfg.enable_all_pro_bonus:
             level = all_pro.get(row.player_id)

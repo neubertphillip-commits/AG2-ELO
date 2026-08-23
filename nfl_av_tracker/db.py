@@ -33,40 +33,135 @@ from .config import AVConfig
 DB_PATH = Path(__file__).parent / "data_cache" / "tracker.db"
 DB_PATH.parent.mkdir(exist_ok=True)
 
-# Schlanke Auswahl an PBP-Spalten, die av_engine/aggregate tatsaechlich
-# braucht. Volles PBP hat ~370 Spalten - das waere unnoetig viel DB-Groesse.
-_PBP_BASE_COLS = [
+# Offense-Yards/TDs (player_offense_stats, team_offense/defense_inputs) und
+# Defense-Sacks/INTs/Tackles (player_defense_stats) kommen aus fertigen
+# Box-Score-Tabellen (import_weekly_data / import_weekly_pfr('def')) - dafuer
+# ist kein Play-Level-Datensatz noetig. Nur fuer Kicker-Distanzbaender,
+# Punt-Laenge je Versuch, Fumble-Recoveries und Defensive-TDs gibt es keine
+# fertige Box-Score-Tabelle; dafuer wird PBP auf genau diese Play-Typen
+# gefiltert (~10% der Zeilen einer vollen PBP-Saison statt 100%).
+_PBP_SPECIAL_COLS = [
     "season", "week", "posteam", "defteam", "play_type", "game_id",
-    "rush_attempt", "rush_touchdown", "rushing_yards", "rusher_player_id", "rusher_player_name",
-    "pass_attempt", "pass_touchdown", "passing_yards", "passer_player_id", "passer_player_name",
-    "interception", "complete_pass", "receiving_yards", "receiver_player_id", "receiver_player_name",
-    "fumble_lost", "touchdown", "return_touchdown",
+    "touchdown", "return_touchdown", "interception",
     "field_goal_attempt", "field_goal_result", "kick_distance", "kicker_player_id", "kicker_player_name",
     "extra_point_attempt", "extra_point_result",
     "punt_attempt", "punt_blocked", "punter_player_id", "punter_player_name",
     "punt_returner_player_id", "punt_returner_player_name",
     "kickoff_returner_player_id", "kickoff_returner_player_name",
-    "sack", "sack_player_id", "sack_player_name",
-    "half_sack_1_player_id", "half_sack_1_player_name", "half_sack_2_player_id", "half_sack_2_player_name",
     "interception_player_id", "interception_player_name",
     "fumble_recovery_1_player_id", "fumble_recovery_1_player_name", "fumble_recovery_1_team",
     "fumble_recovery_2_player_id", "fumble_recovery_2_player_name", "fumble_recovery_2_team",
-    "solo_tackle", "solo_tackle_1_player_id", "solo_tackle_1_player_name",
-    "solo_tackle_2_player_id", "solo_tackle_2_player_name",
-    "tackle_with_assist", "tackle_with_assist_1_player_id", "tackle_with_assist_1_player_name",
-    "tackle_with_assist_1_team", "tackle_with_assist_2_player_id", "tackle_with_assist_2_player_name",
-    "tackle_with_assist_2_team",
-    "assist_tackle", "assist_tackle_1_player_id", "assist_tackle_1_player_name",
-    "assist_tackle_2_player_id", "assist_tackle_2_player_name",
-    "assist_tackle_3_player_id", "assist_tackle_3_player_name",
-    "assist_tackle_4_player_id", "assist_tackle_4_player_name",
 ]
+
+_WEEKLY_COLS = ["season", "week", "player_id", "player_name", "recent_team", "opponent_team",
+                "carries", "rushing_yards", "rushing_tds", "rushing_fumbles_lost",
+                "attempts", "passing_yards", "passing_tds", "interceptions",
+                "receptions", "receiving_yards", "receiving_tds", "receiving_fumbles_lost",
+                "sack_fumbles_lost"]
+_WEEKLY_DEF_COLS = ["season", "week", "team", "pfr_player_id", "pfr_player_name",
+                     "def_sacks", "def_ints", "def_tackles_combined"]
 
 _SNAP_COLS = ["season", "week", "game_id", "game_type", "pfr_player_id", "player", "team",
               "position", "offense_snaps", "offense_pct", "defense_snaps", "defense_pct",
               "st_snaps", "st_pct"]
 _SCHEDULE_COLS = ["season", "week", "home_team", "away_team", "result"]
 _ROSTER_COLS = ["season", "player_name", "team", "position", "depth_chart_position", "pfr_id"]
+
+
+def _filter_special_plays(pbp: pd.DataFrame) -> pd.DataFrame:
+    """Nur Plays behalten, die fuer Kicking/Punting/Fumble-Recovery/
+    Defensive-TDs gebraucht werden - das sind ca. 10% der Plays einer
+    Saison, siehe Docstring oben."""
+    is_td_return = (pbp.get("touchdown") == 1) & (pbp.get("return_touchdown") == 1)
+    has_fumble_recovery = pbp.get("fumble_recovery_1_team").notna() | pbp.get("fumble_recovery_2_team").notna()
+    mask = (
+        (pbp.get("field_goal_attempt") == 1)
+        | (pbp.get("extra_point_attempt") == 1)
+        | (pbp.get("punt_attempt") == 1)
+        | is_td_return
+        | has_fumble_recovery
+    )
+    return pbp[mask.fillna(False)]
+
+
+def _derive_weekly_from_pbp(season: int) -> pd.DataFrame:
+    """Fallback fuer load_weekly_data(), wenn nflverse die schlanke
+    Box-Score-Datei fuer `season` (noch) nicht veroeffentlicht hat: baut
+    dieselbe Player-Week-Tabellenform direkt aus vollem PBP nach (nur fuer
+    diese eine Saison, nicht dauerhaft als PBP gespeichert)."""
+    import nfl_data_py as nfl
+
+    pbp = nfl.import_pbp_data([season], downcast=True, cache=False)
+
+    rush = pbp[pbp["rush_attempt"] == 1].dropna(subset=["rusher_player_id"])
+    r = rush.groupby(["season", "week", "rusher_player_id", "rusher_player_name", "posteam", "defteam"]).agg(
+        carries=("rush_attempt", "sum"), rushing_yards=("rushing_yards", "sum"),
+        rushing_tds=("rush_touchdown", "sum"), rushing_fumbles_lost=("fumble_lost", "sum"),
+    ).reset_index().rename(columns={"rusher_player_id": "player_id", "rusher_player_name": "player_name",
+                                     "posteam": "recent_team", "defteam": "opponent_team"})
+
+    passers = pbp[pbp["pass_attempt"] == 1].dropna(subset=["passer_player_id"])
+    p = passers.groupby(["season", "week", "passer_player_id", "passer_player_name", "posteam", "defteam"]).agg(
+        attempts=("pass_attempt", "sum"), passing_yards=("passing_yards", "sum"),
+        passing_tds=("pass_touchdown", "sum"), interceptions=("interception", "sum"),
+        sack_fumbles_lost=("fumble_lost", "sum"),
+    ).reset_index().rename(columns={"passer_player_id": "player_id", "passer_player_name": "player_name",
+                                     "posteam": "recent_team", "defteam": "opponent_team"})
+
+    recv = pbp[pbp["complete_pass"] == 1].dropna(subset=["receiver_player_id"])
+    c = recv.groupby(["season", "week", "receiver_player_id", "receiver_player_name", "posteam", "defteam"]).agg(
+        receptions=("complete_pass", "sum"), receiving_yards=("receiving_yards", "sum"),
+        receiving_tds=("pass_touchdown", "sum"), receiving_fumbles_lost=("fumble_lost", "sum"),
+    ).reset_index().rename(columns={"receiver_player_id": "player_id", "receiver_player_name": "player_name",
+                                     "posteam": "recent_team", "defteam": "opponent_team"})
+
+    keys = ["season", "week", "player_id", "player_name", "recent_team", "opponent_team"]
+    out = r.merge(p, on=keys, how="outer").merge(c, on=keys, how="outer")
+    return out.fillna(0)
+
+
+def _derive_weekly_def_from_pbp(season: int) -> pd.DataFrame:
+    """Fallback fuer load_weekly_def(), analog zu _derive_weekly_from_pbp:
+    baut Sacks/INTs/Tackles-Zaehler direkt aus vollem PBP nach."""
+    import nfl_data_py as nfl
+
+    pbp = nfl.import_pbp_data([season], downcast=True, cache=False)
+    counts: dict[tuple, dict] = {}
+
+    def bump(pid, name, team, wk, field, amount=1.0):
+        if pd.isna(pid):
+            return
+        key = (pid, wk)
+        rec = counts.setdefault(key, {"pfr_player_id": pid, "pfr_player_name": name, "team": team,
+                                       "season": season, "week": wk,
+                                       "def_sacks": 0.0, "def_ints": 0.0, "def_tackles_combined": 0.0})
+        rec[field] += amount
+
+    for _, r in pbp[pbp["sack"] == 1].iterrows():
+        bump(r.get("sack_player_id"), r.get("sack_player_name"), r.get("defteam"), r.get("week"), "def_sacks", 1.0)
+        for i in (1, 2):
+            hid, hname = r.get(f"half_sack_{i}_player_id"), r.get(f"half_sack_{i}_player_name")
+            if pd.notna(hid):
+                bump(hid, hname, r.get("defteam"), r.get("week"), "def_sacks", 0.5)
+
+    for _, r in pbp[pbp["interception"] == 1].iterrows():
+        bump(r.get("interception_player_id"), r.get("interception_player_name"), r.get("defteam"), r.get("week"), "def_ints", 1.0)
+
+    tkl = pbp[(pbp["solo_tackle"] == 1) | (pbp["tackle_with_assist"] == 1) | (pbp["assist_tackle"] == 1)]
+    for _, r in tkl.iterrows():
+        for i in (1, 2):
+            sid, sname = r.get(f"solo_tackle_{i}_player_id"), r.get(f"solo_tackle_{i}_player_name")
+            if pd.notna(sid):
+                bump(sid, sname, r.get("defteam"), r.get("week"), "def_tackles_combined", 1.0)
+            twid, twname, twteam = r.get(f"tackle_with_assist_{i}_player_id"), r.get(f"tackle_with_assist_{i}_player_name"), r.get(f"tackle_with_assist_{i}_team")
+            if pd.notna(twid) and twteam == r.get("defteam"):
+                bump(twid, twname, twteam, r.get("week"), "def_tackles_combined", 1.0)
+        for i in (1, 2, 3, 4):
+            aid, aname = r.get(f"assist_tackle_{i}_player_id"), r.get(f"assist_tackle_{i}_player_name")
+            if pd.notna(aid):
+                bump(aid, aname, r.get("defteam"), r.get("week"), "def_tackles_combined", 0.5)
+
+    return pd.DataFrame.from_dict(counts, orient="index").reset_index(drop=True)
 
 
 def _connect() -> sqlite3.Connection:
@@ -142,18 +237,38 @@ def _mark_loaded(dataset: str, seasons: list[int]) -> None:
 
 
 def _load_seasonal(dataset: str, table: str, seasons: list[int], columns: list[str],
-                    fetch_fn, prepare_fn=None) -> pd.DataFrame:
+                    fetch_fn, prepare_fn=None, min_season: int | None = None,
+                    fallback_fn=None) -> pd.DataFrame:
+    """min_season: manche nflverse-Quellen lehnen Jahre vor einem bestimmten
+    Startjahr komplett ab (z.B. Snap Counts vor 2013, Defense-Box-Scores vor
+    2018 - siehe README). Jahre davor werden als 'geladen, aber leer'
+    markiert, damit nicht bei jedem Aufruf erneut (erfolglos) angefragt wird.
+
+    fallback_fn(season) -> DataFrame: wird pro Saison versucht, wenn
+    fetch_fn() fuer sie fehlschlaegt (z.B. weil nflverse die schlanke
+    Box-Score-Datei fuer die aktuellste Saison noch nicht veroeffentlicht
+    hat, PBP dafuer aber schon existiert)."""
     seasons = sorted(set(seasons))
     missing = _missing_seasons(dataset, seasons)
     if missing:
-        fresh = fetch_fn(missing)
-        if prepare_fn:
-            fresh = prepare_fn(fresh)
-        cols_present = [c for c in columns if c in fresh.columns]
-        fresh = fresh[cols_present].copy()
-        with _connect() as conn:
-            fresh.to_sql(table, conn, if_exists="append", index=False)
-        _mark_loaded(dataset, missing)
+        fetchable = [s for s in missing if min_season is None or s >= min_season]
+        frames = []
+        for s in fetchable:
+            try:
+                frames.append(fetch_fn([s]))
+            except Exception:
+                if fallback_fn is None:
+                    raise
+                frames.append(fallback_fn(s))
+        if frames:
+            fresh = pd.concat(frames, ignore_index=True)
+            if prepare_fn:
+                fresh = prepare_fn(fresh)
+            cols_present = [c for c in columns if c in fresh.columns]
+            fresh = fresh[cols_present].copy()
+            with _connect() as conn:
+                fresh.to_sql(table, conn, if_exists="append", index=False)
+        _mark_loaded(dataset, missing)  # inkl. zu alter Jahre, damit die nicht jedes Mal neu versucht werden
 
     with _connect() as conn:
         placeholders = ",".join("?" * len(seasons))
@@ -163,17 +278,49 @@ def _load_seasonal(dataset: str, table: str, seasons: list[int], columns: list[s
             return pd.DataFrame(columns=columns)
 
 
-def load_pbp(seasons: list[int]) -> pd.DataFrame:
+def load_pbp_special(seasons: list[int]) -> pd.DataFrame:
+    """Play-Level-Daten, aber nur die ~10% der Plays, die fuer Kicking/
+    Punting/Fumble-Recoveries/Defensive-TDs gebraucht werden (siehe
+    _filter_special_plays). Alles andere (Offense-Yards, Sacks/INTs/Tackles)
+    kommt aus fertigen Box-Score-Tabellen - siehe load_weekly_data/
+    load_weekly_def."""
     import nfl_data_py as nfl
 
-    return _load_seasonal("pbp", "raw_pbp", seasons, _PBP_BASE_COLS,
-                           lambda s: nfl.import_pbp_data(s, downcast=True, cache=False))
+    return _load_seasonal("pbp_special", "raw_pbp_special", seasons, _PBP_SPECIAL_COLS,
+                           lambda s: nfl.import_pbp_data(s, downcast=True, cache=False),
+                           prepare_fn=_filter_special_plays)
+
+
+def load_weekly_data(seasons: list[int]) -> pd.DataFrame:
+    """Offense-Box-Score je Spieler/Woche (Rushing/Passing/Receiving). Faellt
+    pro Saison auf eine PBP-Ableitung zurueck, falls nflverse die Box-Score-
+    Datei (noch) nicht veroeffentlicht hat (typischerweise die laufende/
+    letzte Saison, kurz nachdem sie zu Ende ist)."""
+    import nfl_data_py as nfl
+
+    return _load_seasonal("weekly", "raw_weekly", seasons, _WEEKLY_COLS,
+                           lambda s: nfl.import_weekly_data(s, downcast=True),
+                           fallback_fn=_derive_weekly_from_pbp)
+
+
+def load_weekly_def(seasons: list[int]) -> pd.DataFrame:
+    """Defense-Box-Score je Spieler/Woche (Sacks/INTs/Tackles kombiniert).
+    Nur ab 2018 verfuegbar (nflverse lehnt frueher komplett ab); Fallback
+    auf PBP-Ableitung, falls die Datei fuer eine sonst unterstuetzte Saison
+    (noch) nicht veroeffentlicht ist."""
+    import nfl_data_py as nfl
+
+    return _load_seasonal("weekly_def", "raw_weekly_def", seasons, _WEEKLY_DEF_COLS,
+                           lambda s: nfl.import_weekly_pfr("def", s), min_season=2018,
+                           fallback_fn=_derive_weekly_def_from_pbp)
 
 
 def load_snap_counts(seasons: list[int]) -> pd.DataFrame:
+    """Nur ab 2013 verfuegbar (nflverse lehnt frueher komplett ab)."""
     import nfl_data_py as nfl
 
-    return _load_seasonal("snap_counts", "raw_snap_counts", seasons, _SNAP_COLS, nfl.import_snap_counts)
+    return _load_seasonal("snap_counts", "raw_snap_counts", seasons, _SNAP_COLS,
+                           nfl.import_snap_counts, min_season=2013)
 
 
 def load_schedules(seasons: list[int]) -> pd.DataFrame:
@@ -254,7 +401,7 @@ def cache_status(seasons: list[int]) -> pd.DataFrame:
     for s in seasons:
         rows.append({
             "season": s,
-            "raw_data_cached": s in set(raw[raw["dataset"] == "pbp"]["season"]) if not raw.empty else False,
+            "raw_data_cached": s in set(raw[raw["dataset"] == "weekly"]["season"]) if not raw.empty else False,
             "any_av_cached": s in set(av_seasons["season"]) if not av_seasons.empty else False,
         })
     return pd.DataFrame(rows)

@@ -46,7 +46,9 @@ def _compute_season_av(cfg: AVConfig, season: int, through_week: int | None,
                         all_pro: dict | None) -> pd.DataFrame:
     """Rechnet die AV-Formeln fuer eine Saison/einen Wochenstand tatsaechlich
     durch (keine Cache-Logik hier - siehe build_season_av)."""
-    pbp = ds.get_pbp_data([season])
+    pbp_special = ds.get_pbp_special([season])
+    weekly = ds.get_weekly_data([season])
+    weekly_def = ds.get_weekly_def([season])
     snaps = ds.get_snap_counts([season])
     schedules = ds.get_schedules([season])
 
@@ -54,8 +56,8 @@ def _compute_season_av(cfg: AVConfig, season: int, through_week: int | None,
     roster_positions = _roster_positions_all()
     pos_refine = _position_refinement(season)
 
-    team_off_in = agg.team_offense_inputs(pbp, season, through_week)
-    team_def_in = agg.team_defense_inputs(pbp, season, through_week)
+    team_off_in = agg.team_offense_inputs(weekly, pbp_special, season, through_week)
+    team_def_in = agg.team_defense_inputs(weekly, pbp_special, season, through_week)
     team_off_pts = eng.team_offense_points(cfg, team_off_in)
     team_def_pts = eng.team_defense_points(cfg, team_def_in)
 
@@ -67,18 +69,18 @@ def _compute_season_av(cfg: AVConfig, season: int, through_week: int | None,
     oline_pool_by_team = {t: cfg.o_line_pool_share * v for t, v in team_off_pts.items()}
     oline_av = eng.compute_oline_av(cfg, oline_games, team_off_pts, all_pro)
 
-    offense_stats = agg.player_offense_stats(pbp, season, through_week)
+    offense_stats = agg.player_offense_stats(weekly, season, through_week)
     lg_rb_ypc = agg.league_rb_ypc(offense_stats["rushers"], roster_positions)
     lg_ay_a = agg.league_ay_a(offense_stats["passers"], cfg.qb_min_attempts_for_efficiency)
     skill_av = eng.compute_skill_av(cfg, offense_stats, team_off_pts, oline_pool_by_team, roster_positions, lg_rb_ypc, lg_ay_a)
 
-    defense_stats = agg.player_defense_stats(pbp, season, through_week)
+    defense_stats = agg.player_defense_stats(weekly_def, pbp_special, season, pfr_to_gsis, through_week)
     defense_av = eng.compute_defense_av(cfg, season, defense_games, defense_stats, team_def_pts, all_pro)
 
     team_games = agg.team_games_played(schedules, season, through_week)
-    kicking = agg.player_kicking_stats(pbp, season, through_week)
-    punting = agg.player_punting_stats(pbp, season, through_week)
-    returns = agg.player_return_tds(pbp, season, through_week)
+    kicking = agg.player_kicking_stats(pbp_special, season, through_week)
+    punting = agg.player_punting_stats(pbp_special, season, through_week)
+    returns = agg.player_return_tds(pbp_special, season, through_week)
 
     kicker_av = eng.compute_kicker_av(cfg, kicking, team_games)
     punter_av = eng.compute_punter_av(cfg, punting, team_games)

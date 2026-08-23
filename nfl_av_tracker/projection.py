@@ -29,7 +29,7 @@ _COUNT_COLS_BY_TABLE = {
     "rushers": ["carries", "rushing_yards"],
     "passers": ["attempts", "passing_yards", "passing_tds", "interceptions"],
     "receivers": ["receptions", "receiving_yards"],
-    "defense": ["sacks", "fumble_recoveries", "interceptions", "defensive_tds", "solo_tackles", "assist_tackles"],
+    "defense": ["sacks", "fumble_recoveries", "interceptions", "defensive_tds", "tackles"],
     "kicking": ["xpm", "xpa", "fgm1", "fga1", "fgm2", "fga2", "fgm3", "fga3", "fgm4", "fga4", "fgm5", "fga5",
                 "fgm_u", "fga_u"],
     "punting": ["punt", "punt_blocked", "punt_yds"],
@@ -58,7 +58,9 @@ def _scale(df: pd.DataFrame, cols: list[str], pace: dict[str, float]) -> pd.Data
 def build_projected_season_av(cfg: AVConfig, season: int, through_week: int) -> pd.DataFrame:
     """AV-Rangliste, hochgerechnet auf eine volle Saison, basierend auf dem
     Tempo (Pace) durch Woche `through_week`."""
-    pbp = ds.get_pbp_data([season])
+    pbp_special = ds.get_pbp_special([season])
+    weekly = ds.get_weekly_data([season])
+    weekly_def = ds.get_weekly_def([season])
     snaps = ds.get_snap_counts([season])
     schedules = ds.get_schedules([season])
 
@@ -73,8 +75,8 @@ def build_projected_season_av(cfg: AVConfig, season: int, through_week: int) -> 
     # Kicker/Punter) wird bereits der volle Saison-Spielplan uebergeben.
     team_games_for_engine = team_games_full.rename(columns={"games": "games"})
 
-    team_off_in = _scale(agg.team_offense_inputs(pbp, season, through_week), _COUNT_COLS_BY_TABLE["team_off"], pace)
-    team_def_in = _scale(agg.team_defense_inputs(pbp, season, through_week), _COUNT_COLS_BY_TABLE["team_def"], pace)
+    team_off_in = _scale(agg.team_offense_inputs(weekly, pbp_special, season, through_week), _COUNT_COLS_BY_TABLE["team_off"], pace)
+    team_def_in = _scale(agg.team_defense_inputs(weekly, pbp_special, season, through_week), _COUNT_COLS_BY_TABLE["team_def"], pace)
     team_off_pts = eng.team_offense_points(cfg, team_off_in)
     team_def_pts = eng.team_defense_points(cfg, team_def_in)
 
@@ -95,7 +97,7 @@ def build_projected_season_av(cfg: AVConfig, season: int, through_week: int) -> 
     oline_pool_by_team = {t: cfg.o_line_pool_share * v for t, v in team_off_pts.items()}
     oline_av = eng.compute_oline_av(cfg, oline_games_scaled, team_off_pts, all_pro=None)
 
-    offense_stats_raw = agg.player_offense_stats(pbp, season, through_week)
+    offense_stats_raw = agg.player_offense_stats(weekly, season, through_week)
     offense_stats = {
         "rushers": _scale(offense_stats_raw["rushers"], _COUNT_COLS_BY_TABLE["rushers"], pace),
         "passers": _scale(offense_stats_raw["passers"], _COUNT_COLS_BY_TABLE["passers"], pace),
@@ -112,12 +114,15 @@ def build_projected_season_av(cfg: AVConfig, season: int, through_week: int) -> 
     lg_ay_a = agg.league_ay_a(offense_stats["passers"], cfg.qb_min_attempts_for_efficiency)
     skill_av = eng.compute_skill_av(cfg, offense_stats, team_off_pts, oline_pool_by_team, roster_positions, lg_rb_ypc, lg_ay_a)
 
-    defense_stats = _scale(agg.player_defense_stats(pbp, season, through_week), _COUNT_COLS_BY_TABLE["defense"], pace)
+    defense_stats = _scale(
+        agg.player_defense_stats(weekly_def, pbp_special, season, pfr_to_gsis, through_week),
+        _COUNT_COLS_BY_TABLE["defense"], pace,
+    )
     defense_av = eng.compute_defense_av(cfg, season, defense_games_scaled, defense_stats, team_def_pts, all_pro=None)
 
-    kicking = _scale(agg.player_kicking_stats(pbp, season, through_week), _COUNT_COLS_BY_TABLE["kicking"], pace)
-    punting = _scale(agg.player_punting_stats(pbp, season, through_week), _COUNT_COLS_BY_TABLE["punting"], pace)
-    returns = _scale(agg.player_return_tds(pbp, season, through_week), _COUNT_COLS_BY_TABLE["returns"], pace)
+    kicking = _scale(agg.player_kicking_stats(pbp_special, season, through_week), _COUNT_COLS_BY_TABLE["kicking"], pace)
+    punting = _scale(agg.player_punting_stats(pbp_special, season, through_week), _COUNT_COLS_BY_TABLE["punting"], pace)
+    returns = _scale(agg.player_return_tds(pbp_special, season, through_week), _COUNT_COLS_BY_TABLE["returns"], pace)
 
     kicker_av = eng.compute_kicker_av(cfg, kicking, team_games_for_engine)
     punter_av = eng.compute_punter_av(cfg, punting, team_games_for_engine)
